@@ -1,9 +1,9 @@
 <script>
 export default {
-    name: 'Homepage'
+    name: 'Footer'
 }
 </script>
 
 <template>
-<h1>Home</h1>
+<p class="fs-1">Footer</p>
 </template>

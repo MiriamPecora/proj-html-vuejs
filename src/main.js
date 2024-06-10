@@ -4,10 +4,10 @@ import { createApp } from 'vue';
 import './assets/scss/main.scss';
 
 //import bootstrap
-import bootstrap from 'bootstrap';
+import '../node_modules/bootstrap';
 
 //import router
-import { router } from 'router';
+import { router } from './router';
 
 //import vue root component
 import App from './App.vue';

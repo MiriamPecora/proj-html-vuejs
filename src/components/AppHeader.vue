@@ -1,9 +1,9 @@
 <script>
 export default {
-    name: 'Homepage'
+    name: 'Header'
 }
 </script>
 
 <template>
-<h1>Home</h1>
+<h1>Header</h1>
 </template>
