@@ -1,3 +1,9 @@
 /******
 TYPO
 ******/
+
+@use './variables' as *;
+
+* {
+  color: $color-main;  
+ }

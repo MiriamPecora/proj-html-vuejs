@@ -4,7 +4,6 @@ const store = reactive({
     instructors: [
          {
             name: "Mike Hart",
-            picture: "https://avada.website/driving/wp-content/uploads/sites/114/2019/01/instructor-mikehart.jpg",
             role: "Principle Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             locations: [
@@ -16,7 +15,6 @@ const store = reactive({
          },
          {
             name: "John Smith",
-            picture: "",
             role: "Course Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             locations: [
@@ -28,7 +26,10 @@ const store = reactive({
          },
          {
             name: "Angela Hart",
-            picture: "",
+            picture: {
+                home: "",
+                about: "",
+             },
             role: "Driving Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             locations: [
@@ -39,7 +40,28 @@ const store = reactive({
             ]
          }
     ],
-    testimonials: []
+    testimonials: [
+        {
+            name: "Sophia Jones",
+            picture: ""
+        },
+        {
+            name: "Harold Green",
+            picture: ""
+        },
+        {
+            name: "Grant Harvey",
+            picture: ""
+        },
+        {
+            name: "Kate Lewis",
+            picture: ""
+        },
+        {
+            name: "Kelly Johnson",
+            picture: ""
+        }
+    ]
 });
 
 export { store }
