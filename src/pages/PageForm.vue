@@ -5,5 +5,5 @@ export default {
 </script>
 
 <template>
-<h1>Form</h1>
+<h1>Avada Driving School</h1>
 </template>
