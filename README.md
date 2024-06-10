@@ -1,6 +1,4 @@
-# Template Vite Vue
-
-Template di partenza per progetti Vite Vue
+# Driving
 
 ## Installazione
 
@@ -8,3 +6,9 @@ Template di partenza per progetti Vite Vue
   npm install
   npm run dev
 ```
+
+# Collaboratori al progetto
+
+- Riccardo Tolusso (Homepage)
+- Michele Aliffi (About)
+- Miriam Pecora (Book Now)
