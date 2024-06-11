@@ -46,23 +46,23 @@ const store = reactive({
     testimonials: [
         {
             name: "Sophia Jones",
-            picture: ""
+            picture: "testimonial-sophia.png"
         },
         {
             name: "Harold Green",
-            picture: ""
+            picture: "testimonial-harold.webp"
         },
         {
             name: "Grant Harvey",
-            picture: ""
+            picture: "testimonial-grant.webp"
         },
         {
             name: "Kate Lewis",
-            picture: ""
+            picture: "testimonial-kate.webp"
         },
         {
             name: "Kelly Johnson",
-            picture: ""
+            picture: "testimonial-kelly.webp"
         }
     ]
 });

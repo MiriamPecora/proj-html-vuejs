@@ -117,7 +117,9 @@ export default {
     </section>
 
     <!-- AppTestimonials component -->
-    <AppTestimonials />
+    <section id="testimonial-section">
+        <AppTestimonials />
+    </section>
 
     <!-- latest news section -->
     <section id="latest-news-section">
@@ -171,6 +173,10 @@ export default {
         }
 
 
+    }
+
+    #testimonial-section{
+        background-image: url("../assets/img/testimonials/testimonial-background.jpg");
     }
 
 
