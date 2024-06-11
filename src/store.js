@@ -6,6 +6,7 @@ const store = reactive({
             name: "Mike Hart",
             role: "Principle Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+            shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             locations: [
                 "San Diego",
                 "Los Angeles",
@@ -17,6 +18,7 @@ const store = reactive({
             name: "John Smith",
             role: "Course Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+            shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             locations: [
                 "New York",
                 "New Jersey",
@@ -32,6 +34,7 @@ const store = reactive({
              },
             role: "Driving Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+            shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             locations: [
                 "New York",
                 "South Carolina",
