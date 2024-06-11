@@ -24,6 +24,10 @@ export default {
 </script>
 
 <template>
+<!-- MAIN -->
+<div> 
+
+    
 
     <!-- jumbotron section -->
     <section id="jumbotron-section" class="position-relative">
@@ -36,7 +40,20 @@ export default {
 
     <!-- behindWheel section -->
     <section id="behind-wheel-section">
-
+        <div class="container-lg">
+            <div class="row">
+                <div class="col">
+                    <h2>Get Behind the Wheel</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh.</p>
+                </div>
+                <div class="col">
+                    <div class="team-10-card">
+                        ciao
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- AppStartLearning component -->
@@ -66,15 +83,32 @@ export default {
 
     </section>
 
+</div>
+
 </template>
 
 <style lang="scss" scoped>
-#jumbotron-section{
+    @use '../assets/scss/partials/variables' as *;
 
-    .container-lg{
-        padding: 368px 30px 232px 30px;
+    #jumbotron-section{
+
+        .container-lg{
+            padding: 368px 30px 232px 30px;
+        }
+
     }
-}
+
+    #behind-wheel-section{
+        h2{
+            margin-top: 100px;
+            color: $color-title;
+        }
+    }
+    .team-10-card{
+        height: 630px;
+        position: relative;
+        top: -40px;
+    }
 
 
 </style>
