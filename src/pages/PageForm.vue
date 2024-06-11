@@ -8,7 +8,7 @@ export default {
     <div id="book_now">
         <div id="jumbotron_booknow" class="position-relative">
             <img src="../assets/img/booknow/book-now-hero-background.jpg" alt="jumbotron" class="position-absolute objects-fit-cover z-n1">
-            <div class="card-img-overlay d-flex align-items-end">
+            <div class="">
                 <h1 class="card-text ms-5">Book Now</h1>
             </div>
             
@@ -58,7 +58,20 @@ export default {
 <style lang="scss" scoped>
 
     #book_now{
-        text-align: center;
+        border: 1px solid black;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+
+    h1{
+        padding: 250px 30px 0px 30px;
+        color: white;
     }
 
 </style>
