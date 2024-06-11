@@ -69,6 +69,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 header{
     position: absolute;
     width: 100%;
@@ -76,7 +78,7 @@ header{
 }
 
 .bg-new {
-    background-color: #7ABC64;
+    background-color: $color-main;
 }
 
 .up-nav-text {
