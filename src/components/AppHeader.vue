@@ -5,5 +5,14 @@ export default {
 </script>
 
 <template>
-<h1>Header</h1>
+<header>
+    <h1>Header</h1>
+</header>
 </template>
+
+<style lang="scss" scoped>
+header{
+    position: absolute;
+    top: 0;
+}
+</style>
