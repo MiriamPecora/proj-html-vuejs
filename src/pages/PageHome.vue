@@ -54,11 +54,6 @@ export default {
 
     </section>
 
-    <!-- sign up section TODO:component -->
-    <section id="sign-up-section">
-
-    </section>
-
 </template>
 
 <style lang="scss" scoped>
