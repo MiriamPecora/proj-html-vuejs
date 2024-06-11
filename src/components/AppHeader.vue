@@ -1,4 +1,9 @@
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPhone)
 export default {
     name: 'Header'
 }
@@ -6,8 +11,16 @@ export default {
 
 <template>
 <header>
-    <div class="p-4"></div>
-    <nav class="navbar navbar-expand-lg">
+    <div class="up-nav">
+        <div class="container-lg fs-6 d-flex justify-content-around pt-3">
+            <p>We have a 95% Successful Pass Rate!</p>
+            <p>
+                <font-awesome-icon class="mx-2" icon="fa-solid fa-phone"/>
+                Give us a call to book your tuition! 1-800-555-555
+            </p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg justify-content-center">
         <div class="container-lg px-5 mx-5 my-3 fw-bold">
           <a class="navbar-brand" href="#">
             <img src="/src/assets/img/header/avada-drivers-logo-1x.webp" alt="">
