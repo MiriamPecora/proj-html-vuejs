@@ -42,7 +42,7 @@ export default {
               <li class="nav-item dropdown mx-1">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   COURSES
-                  <span class="">NEW</span>
+                  <span class="fs-6 rounded-1 p-2 btn-success">NEW</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Intensive</a></li>
@@ -58,7 +58,7 @@ export default {
               </li>
               <li class="nav-item mx-1">
                 <a class="nav-link" href="#">
-                    <button class="btn">BOOK NOW</button>
+                    <button class="btn btn-success rounded-5 px-4 fw-semibold" type="submit">BOOK NOW</button>
                 </a>
               </li>
             </ul>
@@ -73,6 +73,10 @@ header{
     position: absolute;
     width: 100%;
     top: 0;
+}
+
+.bg-new {
+    background-color: #7ABC64;
 }
 
 .navbar {
