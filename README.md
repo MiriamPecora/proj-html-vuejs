@@ -7,6 +7,10 @@
   npm run dev
 ```
 
+# Memo
+
+Border Cards rounded-2
+
 # Collaboratori al progetto
 
 - Riccardo Tolusso (Homepage)
