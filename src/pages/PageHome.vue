@@ -28,7 +28,7 @@ export default {
     <!-- jumbotron section -->
     <section id="jumbotron-section" class="position-relative">
         <img class="h-100 w-100 object-fit-cover position-absolute z-n1" :src="getImagesPath('homepage-hero-background.jpg')" alt="jumbotron-background">
-        <div class="content text-white">
+        <div class="container-lg text-white">
             <h1>Drive with Avada</h1>
             <h5>We offer the fines driving tuition money can buy</h5>
         </div>
@@ -71,8 +71,8 @@ export default {
 <style lang="scss" scoped>
 #jumbotron-section{
 
-    .content{
-        padding: 200px 30px 120px 30px;
+    .container-lg{
+        padding: 368px 30px 232px 30px;
     }
 }
 
