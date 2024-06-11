@@ -16,12 +16,12 @@ export default{
 
 <template>
 <div class="learn-more">
-    <img :src="getImagesPath" :alt="`${title} car img`">
+    <img class="w-100" :src="getImagesPath" :alt="`${title} car img`">
     <h6>{{ title }}</h6>
     <button class="btn">LEARN MORE</button>
 </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
