@@ -12,7 +12,7 @@ export default {
 <template>
 <header>
     <div class="up-nav">
-        <div class="container-lg d-flex justify-content-between pt-3 px-5">
+        <div class="container-lg d-flex justify-content-between pt-3">
             <p class="up-nav-text">We have a 95% Successful Pass Rate!</p>
             <p class="up-nav-text">
                 <font-awesome-icon class="mx-2" icon="fa-solid fa-phone"/>
@@ -20,15 +20,15 @@ export default {
             </p>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg justify-content-center ps-1">
-        <div class="continaer-lg d-flex my-3 ps-5 fw-semibold">
-          <a class="navbar-brand mx-5" href="#">
+    <nav class="navbar navbar-expand-lg ps-1">
+        <div class="container-lg my-3 fw-semibold">
+          <a class="navbar-brand" href="#">
             <img src="/src/assets/img/header/avada-drivers-logo-1x.webp" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mx-4 pt-3" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse pt-3 justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item mx-3 ms-5">
                 <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
