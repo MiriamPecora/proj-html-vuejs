@@ -12,7 +12,7 @@ export default {
 <template>
 <header>
     <div class="up-nav">
-        <div class="container-lg fs-6 d-flex justify-content-around pt-3">
+        <div class="container-fluid d-flex justify-content-around pt-3 px-5">
             <p class="up-nav-text">We have a 95% Successful Pass Rate!</p>
             <p class="up-nav-text">
                 <font-awesome-icon class="mx-2" icon="fa-solid fa-phone"/>
@@ -20,26 +20,26 @@ export default {
             </p>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg justify-content-center">
-        <div class="container-lg px-5 mx-5 my-3 fw-semibold">
-          <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg justify-content-center ps-1">
+        <div class="continaer-lg d-flex my-3 ps-5 fw-semibold">
+          <a class="navbar-brand mx-5" href="#">
             <img src="/src/assets/img/header/avada-drivers-logo-1x.webp" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mx-5 pt-3" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-5">
-              <li class="nav-item mx-1">
+          <div class="collapse navbar-collapse mx-4 pt-3" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3 ms-5">
                 <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
               </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link text-white" href="#">ABOUT</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="../pages/PageAbout.vue">ABOUT</a>
               </li>
-              <li class="nav-item mx-1">
+              <li class="nav-item mx-3">
                 <a class="nav-link text-white" href="#">PRICES</a>
               </li>
-              <li class="nav-item dropdown mx-1">
+              <li class="nav-item dropdown mx-3">
                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   COURSES
                   <span class="rounded-1 p-1 mx-1 btn span-nav bg-new fw-semibold text-white">NEW</span>
@@ -50,15 +50,15 @@ export default {
                   <li><a class="dropdown-item" href="#">Instructor</a></li>
                 </ul>
               </li>
-              <li class="nav-item mx-1">
+              <li class="nav-item mx-3">
                 <a class="nav-link text-white" href="#">LOCATIONS</a>
               </li>
-              <li class="nav-item mx-1">
+              <li class="nav-item mx-3">
                 <a class="nav-link text-white" href="#">BLOG</a>
               </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" href="#">
-                    <button class="btn bg-new rounded-5 px-4 fw-semibold text-white" type="submit">BOOK NOW</button>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="/src/pages/PageForm.vue">
+                    <button class="btn bg-new rounded-5 px-4 py-2 fw-semibold text-white" type="submit">BOOK NOW</button>
                 </a>
               </li>
             </ul>
