@@ -46,7 +46,7 @@ export default {
 
         <div id="quick_contact">
 
-            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card">
+            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card position-relative">
                 <div class="row mx-auto">
 
                     <div id="form_left_side" class="col-4">
@@ -125,6 +125,7 @@ export default {
 
     .team-10-card{
         border-top: 5px solid grey;
+        top: -40px
     }
 
     // TEXT
