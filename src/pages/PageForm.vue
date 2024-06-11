@@ -6,8 +6,12 @@ export default {
 
 <template>
     <div id="book_now">
-        <div>
-            <h1>Book Now</h1>
+        <div id="jumbotron_booknow" class="position-relative">
+            <img src="../assets/img/booknow/book-now-hero-background.jpg" alt="jumbotron" class="position-absolute objects-fit-cover z-n1">
+            <div class="card-img-overlay d-flex align-items-end">
+                <h1 class="card-text ms-5">Book Now</h1>
+            </div>
+            
         </div>
 
         <div id="text_section">
@@ -55,7 +59,6 @@ export default {
 
     #book_now{
         text-align: center;
-        margin-top: 150px;
     }
 
 </style>
