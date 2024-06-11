@@ -8,7 +8,7 @@ export default {
 <header>
     <div class="p-4"></div>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-5 mx-5 my-3 fw-bold">
+        <div class="container-lg px-5 mx-5 my-3 fw-bold">
           <a class="navbar-brand" href="#">
             <img src="/src/assets/img/header/avada-drivers-logo-1x.webp" alt="">
           </a>
@@ -60,10 +60,6 @@ header{
     position: absolute;
     width: 100%;
     top: 0;
-}
-
-nav {
-    background-color: #3333338C;
 }
 
 .navbar {
