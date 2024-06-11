@@ -34,7 +34,7 @@ export default {
         <img class="h-100 w-100 object-fit-cover position-absolute z-n1" :src="getImagesPath('homepage-hero-background.jpg')" alt="jumbotron-background">
         <div class="container-lg text-white">
             <h1>Drive with Avada</h1>
-            <h5>We offer the fines driving tuition money can buy</h5>
+            <h5>We offer the finest driving tuition money can buy</h5>
         </div>
     </section>
 
@@ -60,8 +60,19 @@ export default {
     <AppStartLearning />
 
     <!-- courses section -->
-    <section>
+    <section id="courses-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="team-10-card">
 
+                    </div>
+                </div>
+                <div class="col-7">
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- AppPercentage component -->
@@ -93,7 +104,7 @@ export default {
     #jumbotron-section{
 
         .container-lg{
-            padding: 368px 30px 232px 30px;
+            padding: 368px 0px 232px 0px;
         }
 
     }
@@ -103,11 +114,21 @@ export default {
             margin-top: 100px;
             color: $color-title;
         }
+        .team-10-card{
+            height: 630px;
+            position: relative;
+            top: -40px;
+        }
     }
-    .team-10-card{
-        height: 630px;
-        position: relative;
-        top: -40px;
+
+    #courses-section{
+
+        .team-10-card{
+            position: relative;
+            top: -30px;
+            width: 100%;
+            height: 400px;
+        }
     }
 
 
