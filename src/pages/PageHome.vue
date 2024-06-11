@@ -3,14 +3,35 @@ import AppStartLearning from "../components/AppStartLearning.vue"
 import AppPercentage from "../components/AppPercentage.vue"
 import AppCard from "../components/AppCard.vue"
 import AppTestimonials from "../components/AppTestimonials.vue"
+import AppLearnMore from "../components/AppLearnMore.vue"
+
 
 export default {
     name: 'Homepage',
+    data(){
+        return{
+            courses: [
+                {
+                    image: "courses-passplus.jpg",
+                    title: "Pass Plus"
+                },
+                {
+                    image: "courses-intensive.jpg",
+                    title: "Intensive Course"
+                },
+                {
+                    image: "courses-instructor.jpg",
+                    title: "Instructors"
+                }
+            ]
+        }
+    },
     components: {
         AppStartLearning,
         AppPercentage,
         AppCard,
-        AppTestimonials
+        AppTestimonials,
+        AppLearnMore,
     },
     methods: {
         getImagesPath(image){
@@ -30,8 +51,7 @@ export default {
     
 
     <!-- jumbotron section -->
-    <section id="jumbotron-section" class="position-relative">
-        <img class="h-100 w-100 object-fit-cover position-absolute z-n1" :src="getImagesPath('homepage-hero-background.jpg')" alt="jumbotron-background">
+    <section id="jumbotron-section">
         <div class="container-lg text-white">
             <h1>Drive with Avada</h1>
             <h5>We offer the finest driving tuition money can buy</h5>
@@ -49,7 +69,7 @@ export default {
                 </div>
                 <div class="col">
                     <div class="team-10-card">
-                        ciao
+                        
                     </div>
                 </div>
             </div>
@@ -61,15 +81,15 @@ export default {
 
     <!-- courses section -->
     <section id="courses-section">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-5">
+                <div class="col-5 pe-5">
                     <div class="team-10-card">
-
+                        
                     </div>
                 </div>
-                <div class="col-7">
-                    
+                <div class="courses col-7 d-flex justify-content-between  gap-5 ">
+                    <AppLearnMore v-for="course in courses" :imagePath="course.image" :title="course.title"/>
                 </div>
             </div>
         </div>
@@ -102,9 +122,11 @@ export default {
     @use '../assets/scss/partials/variables' as *;
 
     #jumbotron-section{
-
+        background-image: url("../assets/img/home/homepage-hero-background.jpg");
+        background-size: cover;
         .container-lg{
-            padding: 368px 0px 232px 0px;
+            padding-top: 368px;
+            padding-bottom: 232px;
         }
 
     }
@@ -122,13 +144,21 @@ export default {
     }
 
     #courses-section{
-
+        background-image: url("../assets/img/home/courses-background.png");
+        background-size: cover;
+        background-position: bottom;
         .team-10-card{
             position: relative;
             top: -30px;
             width: 100%;
             height: 400px;
         }
+        
+        .courses{
+            padding-top: 78px;
+        }
+
+
     }
 
 
