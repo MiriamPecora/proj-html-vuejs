@@ -12,7 +12,7 @@ export default {
 <template>
 <header>
     <div class="up-nav">
-        <div class="container-fluid d-flex justify-content-around pt-3 px-5">
+        <div class="container-lg d-flex justify-content-between pt-3 px-5">
             <p class="up-nav-text">We have a 95% Successful Pass Rate!</p>
             <p class="up-nav-text">
                 <font-awesome-icon class="mx-2" icon="fa-solid fa-phone"/>
