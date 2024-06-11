@@ -6,7 +6,7 @@ export default {
 
 <template>
 <header>
-
+    <div class="p-4"></div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-5 mx-5 my-3 fw-bold">
           <a class="navbar-brand" href="#">
@@ -64,5 +64,9 @@ header{
 
 nav {
     background-color: #3333338C;
+}
+
+.navbar {
+    
 }
 </style>
