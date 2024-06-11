@@ -1,20 +1,64 @@
 <script>
+import AppStartLearning from "../components/AppStartLearning.vue"
+import AppPercentage from "../components/AppPercentage.vue"
+import AppCard from "../components/AppCard.vue"
+import AppTestimonials from "../components/AppTestimonials.vue"
+
 export default {
-    name: 'Homepage'
+    name: 'Homepage',
+    components: {
+        AppStartLearning,
+        AppPercentage,
+        AppCard,
+        AppTestimonials
+    }
 }
 </script>
 
 <template>
-<!-- jumbotron section -->
-<!-- first lesson section -->
-<!-- AppStartLearning component -->
-<!-- courses section -->
-<!-- AppPercentage component -->
-<!-- instructors section -->
-  <!-- ->AppCard component  -->
-<!-- AppTestimonials component -->
-<!-- latest news section -->
-<!-- sign up section TODO:component -->
+
+    <!-- jumbotron section -->
+    <section id="jumbotron-section">
+
+    </section>
+
+    <!-- behindWheel section -->
+    <section id="behind-wheel-section">
+
+    </section>
+
+    <!-- AppStartLearning component -->
+    <AppStartLearning />
+
+    <!-- courses section -->
+    <section>
+
+    </section>
+
+    <!-- AppPercentage component -->
+    <AppPercentage />
+
+    <!-- instructors section -->
+    <section id="instructors-section">
+        <!-- ->AppCard component  -->
+        <AppCard />
+        <AppCard />
+        <AppCard />
+    </section>
+
+    <!-- AppTestimonials component -->
+    <AppTestimonials />
+
+    <!-- latest news section -->
+    <section id="latest-news-section">
+
+    </section>
+
+    <!-- sign up section TODO:component -->
+    <section id="sign-up-section">
+
+    </section>
+
 </template>
 
 <style lang="scss" scoped>
