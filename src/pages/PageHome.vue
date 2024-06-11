@@ -94,6 +94,7 @@ export default {
             </div>
         </div>
     </section>
+    <img class="w-100 position-absolute z-n1" src="../assets/img/home/triangle-down-gray.png" alt="triangolo">
 
     <!-- AppPercentage component -->
     <AppPercentage />
@@ -101,9 +102,18 @@ export default {
     <!-- instructors section -->
     <section id="instructors-section">
         <!-- ->AppCard component  -->
-        <AppCard />
-        <AppCard />
-        <AppCard />
+        <div class="container-lg">
+            <div class="row ">
+                <div class="col-12">Ciao</div>
+                <div class="col-7">come</div>
+                <div class="col-5">va</div>
+            </div>
+            <div class="row">
+                <AppCard />
+                <AppCard />
+                <AppCard /> 
+            </div>
+        </div>
     </section>
 
     <!-- AppTestimonials component -->
@@ -147,6 +157,8 @@ export default {
         background-image: url("../assets/img/home/courses-background.png");
         background-size: cover;
         background-position: bottom;
+        padding-bottom: 100px;
+
         .team-10-card{
             position: relative;
             top: -30px;
