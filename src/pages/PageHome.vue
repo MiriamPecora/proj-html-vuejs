@@ -123,7 +123,29 @@ export default {
 
     <!-- latest news section -->
     <section id="latest-news-section">
-        
+        <div class="container-lg">
+            <div class="team-10-card row">
+                <div class="col-12">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="col-6">
+                    <img src="" alt="img strana">
+                    <h3>What a car</h3>
+                    <p>testo in piccolo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6">
+                    <img src="" alt="img strana">
+                    <h3>Avada driving</h3>
+                    <p>testo in piccolo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success">MORE FROM THE BLOG</button>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 </div>
@@ -180,7 +202,11 @@ export default {
     }
 
     #latest-news-section{
-        background-image: url("../assets/img/home/");
+        background-image: url("../assets/img/home/latest-news-background.png");
+
+        .team-10-card{
+            border-bottom: 0;
+        }
     }
 
 
