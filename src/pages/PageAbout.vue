@@ -45,9 +45,9 @@ export default {
             <h1 class="text-dark pt-4">Our Team</h1>
             <p class="fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <!-- ->AppCard component  -->
-            <AppCard/>
-            <AppCard/>
-            <AppCard/>
+            <AppCard image-path="about/mike-hart-about-page.jpg"/>
+            <AppCard image-path="about/mike-hart-about-page.jpg"/>
+            <AppCard image-path="about/mike-hart-about-page.jpg"/>
         </div>
     </section>
     <!-- promise section -->
