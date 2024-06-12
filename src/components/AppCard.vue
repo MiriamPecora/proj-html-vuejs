@@ -1,13 +1,13 @@
 <script>
 import { store } from '../store';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faCircleArrowRight)
-library.add(faFacebook)
+library.add(faFacebookF)
 library.add(faXTwitter)
 library.add(faInstagram)
 
@@ -47,7 +47,7 @@ export default {
     <div>
         <h2>{{ name }}</h2>
         <span>
-            <font-awesome-icon icon="fa-brands fa-facebook"/>
+            <font-awesome-icon icon="fa-brands fa-facebook-f"/>
             <font-awesome-icon icon="fa-brands fa-x-twitter"/>
             <font-awesome-icon icon="fa-brands fa-instagram"/>
         </span>

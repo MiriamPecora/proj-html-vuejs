@@ -61,14 +61,84 @@ export default {
             <p class="fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <div class="row d-flex">
                 <div class="col">
-                    <div>1</div>
-                    <div>1</div>
-                    <div>1</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              High Rate of Success
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Zero Accident Rate
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              We're Never Late
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="col">
-                    <div>1</div>
-                    <div>1</div>
-                    <div>1</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Price Promise
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              True Professionals
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              We Work Around You
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -76,7 +146,7 @@ export default {
     <!-- learning components -->
     <AppStartLearning/>
     <!-- testimonials components -->
-    <AppTestimonials/>
+    <AppTestimonials id="#testimonial-section"/>
 </div>
 </template>
 
@@ -99,5 +169,9 @@ export default {
 
 #promise-section {
     background-image: url(../assets/img/about/about-promise-background.jpg);
+}
+
+#testimonial-section {
+    background-image: url(../assets/img/testimonials/testimonial-background.jpg);
 }
 </style>
