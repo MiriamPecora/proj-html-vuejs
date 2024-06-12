@@ -123,7 +123,31 @@ export default {
 
     <!-- latest news section -->
     <section id="latest-news-section">
-        
+        <div class="container-lg">
+            <div class="team-10-card row">
+                <div class="col-12">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="col-6">
+                    <div class="image-container">
+                        <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
+                    </div>
+                    <h3>What a car</h3>
+                    <p>testo in piccolo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6">
+                    <img src="../assets/img/home/latest-news-car2.png" alt="img strana">
+                    <h3>Avada driving</h3>
+                    <p>testo in piccolo</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success">MORE FROM THE BLOG</button>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 </div>
@@ -180,7 +204,35 @@ export default {
     }
 
     #latest-news-section{
-        background-image: url("../assets/img/home/");
+        background-image: url("../assets/img/home/latest-news-background.png");
+
+        .team-10-card{
+            border-bottom: 0;
+        }
+
+        // .image-container:hover{
+        //     background-size: 100%;
+        //     background-image: url("../assets/img/home/mask-17.svg");
+        //     background-position: center;
+        //     background-size: cover;
+        // }
+
+        img{
+            width: 100%;
+            
+
+            mask-image: url("../assets/img/home/mask-17.svg");
+            mask-position: center;
+            mask-size: cover;
+            transition: all 0.4s;
+
+
+            &:hover{
+                perspective: 100px;
+                transform: scale(1.03);
+            }
+        }
+
     }
 
 
