@@ -4,6 +4,10 @@ const store = reactive({
     instructors: [
          {
             name: "Mike Hart",
+            picture: {
+                home: "mike-heart-home",
+                about: "mike-heart-about",
+            },
             role: "Principle Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -16,6 +20,10 @@ const store = reactive({
          },
          {
             name: "John Smith",
+            picture: {
+                home: "john-smith-home",
+                about: "john-smith-about",
+            },
             role: "Course Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -29,9 +37,9 @@ const store = reactive({
          {
             name: "Angela Hart",
             picture: {
-                home: "",
-                about: "",
-             },
+                home: "angela-heart-home",
+                about: "angela-heart-about",
+            },
             role: "Driving Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
             shortDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
