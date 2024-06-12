@@ -40,7 +40,7 @@ export default {
         <img :src="imageUrl" :alt="this.name">
     </div>
     <div>
-        <h2>{{ name }}</h2>
+        <h2 class="text-dark">{{ name }}</h2>
         <span>
             <font-awesome-icon icon="fa-brands fa-facebook-f"/>
             <font-awesome-icon icon="fa-brands fa-x-twitter"/>
