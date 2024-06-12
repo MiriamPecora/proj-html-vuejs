@@ -51,8 +51,8 @@ export default {
             </div>
         </div>
 
-        <div id="quick_contact">
-            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card card-border position-relative">
+        <div id="quick_contact" class="py-5">
+            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card card-border position-relative mb-5">
                 <div class="row mx-auto">
 
                     <div id="form_left_side" class="col-4">
@@ -96,16 +96,22 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-lg h-100 d-flex justify-content-between py-5">
-        <AppPercentage /> 
-        <AppPercentage /> 
-        <AppPercentage /> 
+        <div id="treeBackground">
+            <div id="percentageCards" class="container-lg h-100 d-flex justify-content-between py-5 position-relative">
+                <AppPercentage final-percentage="95" label-text="PASS RATE" /> 
+                <AppPercentage final-percentage="100" label-text="REFERRAL RATE" /> 
+                <AppPercentage final-percentage="0" label-text="ACCIDENT RATE" /> 
+            </div>
+            
+            <div id="testimonialsSection">
+                <AppTestimonials />
+            </div>
+        </div>
+        
+        
+
     </div>
-    
-    <AppTestimonials />
-    
 </template>
 
 <style lang="scss" scoped>
@@ -136,9 +142,20 @@ export default {
         }  
     }
 
+    #percentageCards {
+        top: -90px;
+    }
+
+    #treeBackground {
+        background-image: url("../assets/img/testimonials/testimonial-background.jpg");
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+    }
+
     .card-border{
         border-top: 5px solid $bg-dark-semitransparent;
-        top: -40px
+        top: -90px
     }
 
     // TEXT
