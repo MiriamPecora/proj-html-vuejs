@@ -16,6 +16,10 @@
                 canvasHeigth: null,
             }
         },
+        props: [
+            "finalPercentage",
+            "labelText",
+        ],
         // Inizio progressione spin 
         methods: {
             createCanva() {
@@ -25,7 +29,7 @@
                 this.context = canvas.getContext('2d');
                 this.posX = canvas.width / 2,
                 this.posY = canvas.height / 2,
-                this.result = this.oneProcent * 95;
+                this.result = this.oneProcent * this.finalPercentage;
             
                 this.context.lineCap = 'round';
                 this.arcInterval = setInterval(this.startInterval, this.fps);
@@ -67,7 +71,7 @@
     <div class="canvas-wrap team-10-card d-flex justify-content-center flex-column">
         <canvas ref="canvas" width="260" height="220"></canvas>
         <span id="procent">{{ percentageFixed }}</span>
-        <span id="procentLabel" class="mb-5 text-center fw-semibold">PASS RATE</span>
+        <span id="procentLabel" class="mb-5 text-center fw-semibold"> {{ labelText }}</span>
     </div>
 </template>
 
