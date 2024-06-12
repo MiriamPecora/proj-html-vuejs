@@ -1,9 +1,15 @@
 <script>
+import { store } from "../store"
 import AppStartLearning from "../components/AppStartLearning.vue"
 import AppCard from "../components/AppCard.vue"
 import AppTestimonials from "../components/AppTestimonials.vue"
 export default {
     name: 'About',
+    data() {
+        return {
+            store
+        }
+    },
     components: {
         AppStartLearning,
         AppCard,
@@ -44,10 +50,8 @@ export default {
         <div class="container text-center py-5">
             <h1 class="text-dark pt-4">Our Team</h1>
             <p class="fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
-            <!-- ->AppCard component  -->
-            <AppCard image-path="about/mike-hart-about-page.jpg"/>
-            <AppCard image-path="about/mike-hart-about-page.jpg"/>
-            <AppCard image-path="about/mike-hart-about-page.jpg"/>
+            <!-- AppCard component  -->
+            <AppCard v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about"/>
         </div>
     </section>
     <!-- promise section -->

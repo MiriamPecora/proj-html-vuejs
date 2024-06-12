@@ -5,8 +5,8 @@ const store = reactive({
          {
             name: "Mike Hart",
             picture: {
-                home: "mike-heart-home",
-                about: "mike-heart-about",
+                home: "mike-hart-home",
+                about: "mike-hart-about",
             },
             role: "Principle Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
@@ -37,8 +37,8 @@ const store = reactive({
          {
             name: "Angela Hart",
             picture: {
-                home: "angela-heart-home",
-                about: "angela-heart-about",
+                home: "angela-hart-home",
+                about: "angela-hart-about",
             },
             role: "Driving Instructor",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
