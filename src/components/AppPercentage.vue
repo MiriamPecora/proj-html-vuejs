@@ -28,17 +28,13 @@
                 this.result = this.oneProcent * 64;
             
                 this.context.lineCap = 'round';
+                this.arcInterval = setInterval(this.startInterval, this.fps);
             },
 
             startInterval(){
-                // const spanProcent = this.$refs.procent;
-                console.log(this.context)
-                this.arcInterval = setInterval (function() {
                 this.deegres += 1;
-                // this.context.clearRect( 0, 0, this.canvasWidth, this.canvasHeigth );
+                this.context.clearRect( 0, 0, this.canvasWidth, this.canvasHeigth );
                 this.procent = this.deegres / this.oneProcent;
-
-                // spanProcent.innerHTML = procent.toFixed();
 
                 this.context.beginPath();
                 this.context.arc( this.posX, this.posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
@@ -52,12 +48,16 @@
                 this.context.arc( this.posX, this.posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + this.deegres) );
                 this.context.stroke();
                 if( this.deegres >= this.result ) clearInterval(this.arcInterval);
-                }, this.fps);
+            }
+        },
+        computed: {
+            percentageFixed(){
+                return this.procent.toFixed()
             }
         },
         mounted(){
             this.createCanva();
-            // this.startInterval();
+            this.startInterval();
         },
     }
 
@@ -66,7 +66,7 @@
 <template>
     <div class="canvas-wrap">
         <canvas ref="canvas" width="300" height="300"></canvas>
-        <span ref="procent"></span>
+        <span>{{ percentageFixed }}</span>
     </div>
 </template>
 
