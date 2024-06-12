@@ -5,6 +5,7 @@ import AppCard from "../components/AppCard.vue"
 import AppTestimonials from "../components/AppTestimonials.vue"
 import AppLearnMore from "../components/AppLearnMore.vue"
 
+import { store } from '../store'
 
 export default {
     name: 'Homepage',
@@ -23,7 +24,8 @@ export default {
                     image: "courses-instructor.jpg",
                     title: "Instructors"
                 }
-            ]
+            ],
+            store
         }
     },
     components: {
@@ -104,14 +106,25 @@ export default {
         <!-- ->AppCard component  -->
         <div class="container-lg">
             <div class="row ">
-                <div class="col-12">Ciao</div>
-                <div class="col-7">come</div>
-                <div class="col-5">va</div>
+                <div class="col-12">
+                    <h1>Your Instructors</h1>
+                </div>
+                <div class="col-7">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                </div>
+                <div class="col-5">
+                    <button class="btn">More About Us</button>
+                </div>
             </div>
             <div class="row">
-                <AppCard />
-                <AppCard />
-                <AppCard /> 
+                <div class="col" v-for="(instructor, id) in store.instructors" :key="`instructor-${id}`">
+                    <AppCard 
+                    :name="instructor.name"
+                    :description="instructor.shortDesc"
+                    :image-path="instructor.picture.home"
+                    :is-full-width="false"
+                    />
+                </div>
             </div>
         </div>
     </section>
@@ -233,6 +246,11 @@ export default {
             }
         }
 
+    }
+
+    #instructors-section{
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
 
