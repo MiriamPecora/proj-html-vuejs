@@ -52,7 +52,7 @@ export default {
         </div>
 
         <div id="quick_contact">
-            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card position-relative">
+            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card card-border position-relative">
                 <div class="row mx-auto">
 
                     <div id="form_left_side" class="col-4">
@@ -98,7 +98,12 @@ export default {
         </div>
     </div>
 
-    <AppPercentage />
+    <div class="container-lg h-100 d-flex justify-content-between py-5">
+        <AppPercentage /> 
+        <AppPercentage /> 
+        <AppPercentage /> 
+    </div>
+    
     <AppTestimonials />
     
 </template>
@@ -131,8 +136,8 @@ export default {
         }  
     }
 
-    .team-10-card{
-        border-top: 5px solid grey;
+    .card-border{
+        border-top: 5px solid $bg-dark-semitransparent;
         top: -40px
     }
 
