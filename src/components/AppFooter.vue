@@ -81,6 +81,28 @@
             </div>
         </div>
 
+        <div id="bottom_footer">
+            <div class="container-lg d-flex justify-content-between py-5">
+                <div class="row w-100">
+                    <div class="col-sm-6 col-md-8 d-flex align-items-center">
+                        <div class="content text-nowrap">
+                            <p>© Copyright 2012 - 2024 | Avada Theme by <span class="highlight">ThemeFusion</span> | All Rights Reserved | Powered by <span class="highlight">WordPress</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 d-flex justify-content-end align-items-center">
+                    <div class="content">
+                        <ul class="d-flex flex-row gap-3 mb-0">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 </template>
 
@@ -119,7 +141,11 @@
         background-color: $color-main;
     }
 
-    // .col {
-    //     border: solid black 1px;
-    // }
+    #bottom_footer {
+        background-color: $bg-dark;
+    }
+
+    .highlight {
+        color: $color-main;
+    }
 </style>
