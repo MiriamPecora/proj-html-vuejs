@@ -99,7 +99,11 @@ export default {
     <img class="w-100 position-absolute z-n1" src="../assets/img/home/triangle-down-gray.png" alt="triangolo">
 
     <!-- AppPercentage component -->
-    <AppPercentage />
+    <div id="percentageCards" class="container-lg h-100 d-flex justify-content-between py-5 position-relative">
+        <AppPercentage final-percentage="95" label-text="PASS RATE" /> 
+        <AppPercentage final-percentage="100" label-text="REFERRAL RATE" /> 
+        <AppPercentage final-percentage="0" label-text="ACCIDENT RATE" /> 
+    </div>
 
     <!-- instructors section -->
     <section id="instructors-section">
