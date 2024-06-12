@@ -1,15 +1,11 @@
 <script>
 import { store } from '../store';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faCircleArrowRight)
-library.add(faFacebookF)
-library.add(faXTwitter)
-library.add(faInstagram)
+library.add(faFacebookF, faXTwitter, faInstagram)
 
 export default {
     name: 'Card',
