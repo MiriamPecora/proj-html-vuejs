@@ -16,7 +16,7 @@
                 canvasHeigth: null,
             }
         },
-        // Inizio spin progressione
+        // Inizio progressione spin 
         methods: {
             createCanva() {
                 const canvas = this.$refs.canvas;
@@ -25,7 +25,7 @@
                 this.context = canvas.getContext('2d');
                 this.posX = canvas.width / 2,
                 this.posY = canvas.height / 2,
-                this.result = this.oneProcent * 64;
+                this.result = this.oneProcent * 95;
             
                 this.context.lineCap = 'round';
                 this.arcInterval = setInterval(this.startInterval, this.fps);
@@ -38,13 +38,13 @@
 
                 this.context.beginPath();
                 this.context.arc( this.posX, this.posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
-                this.context.strokeStyle = '#b1b1b1';
-                this.context.lineWidth = '10';
+                this.context.strokeStyle = '#f6f6f6';
+                this.context.lineWidth = '8';
                 this.context.stroke();
 
                 this.context.beginPath();
-                this.context.strokeStyle = '#3949AB';
-                this.context.lineWidth = '10';
+                this.context.strokeStyle = '#7ABC74';
+                this.context.lineWidth = '8';
                 this.context.arc( this.posX, this.posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + this.deegres) );
                 this.context.stroke();
                 if( this.deegres >= this.result ) clearInterval(this.arcInterval);
@@ -64,34 +64,47 @@
 </script>
 
 <template>
-    <div class="canvas-wrap">
-        <canvas ref="canvas" width="300" height="300"></canvas>
-        <span>{{ percentageFixed }}</span>
+    <div class="canvas-wrap team-10-card d-flex justify-content-center flex-column">
+        <canvas ref="canvas" width="260" height="220"></canvas>
+        <span id="procent">{{ percentageFixed }}</span>
+        <span id="procentLabel" class="mb-5 text-center fw-semibold">PASS RATE</span>
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@use '../assets/scss/partials/variables' as *;
+    
     :root {
-  background: #fff;
-}
+        background: #fff;
+    }
 
-span#procent {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 50px;
-  transform: translate(-50%, -50%);
-  color: #3949AB;
-}
+    #procent {
+        
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 50px;
+        transform: translate(-50%, -100%);
+        color: $color-text;
+    }
 
-span#procent::after {
-  content: '%';
-}
+    #procent::after {
+        content: '%';
+    }
 
-.canvas-wrap {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
+    #procentLabel {
+    color: $color-text;
+    }
+
+    .canvas-wrap {
+        position: relative;    
+    }
+
+    .team-10-card{
+        border-top: 5px solid $color-main;
+        height: 420px;
+        width: 380px;
+    }
 </style>

@@ -21,7 +21,6 @@ export default {
         name: String,
         role: String,
         description: String,
-        shortDesc: String,
         locations: Array,
         isFullWidth: Boolean,
         imagePath: String,
@@ -49,7 +48,7 @@ export default {
         <font-awesome-icon icon="fa-brands fa-x-twitter"/>
         <font-awesome-icon icon="fa-brands fa-instagram"/>
     </span>
-    <p></p>
+    <p>{{ description }}</p>
 </div>
 </template>
 
