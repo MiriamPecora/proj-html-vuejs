@@ -4,7 +4,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+library.add(faCircleArrowRight)
 library.add(faFacebook)
 library.add(faXTwitter)
 library.add(faInstagram)
@@ -39,16 +41,27 @@ export default {
 
 <template>
 <div class="team-10-card" :class="{'card-lg': isFullWidth}">
-    <div>
+    <div class="d-flex">
         <img :src="imageUrl" :alt="this.name">
     </div>
-    <h2>{{ name }}</h2>
-    <span>
-        <font-awesome-icon icon="fa-brands fa-facebook"/>
-        <font-awesome-icon icon="fa-brands fa-x-twitter"/>
-        <font-awesome-icon icon="fa-brands fa-instagram"/>
-    </span>
-    <p>{{ description }}</p>
+    <div>
+        <h2>{{ name }}</h2>
+        <span>
+            <font-awesome-icon icon="fa-brands fa-facebook"/>
+            <font-awesome-icon icon="fa-brands fa-x-twitter"/>
+            <font-awesome-icon icon="fa-brands fa-instagram"/>
+        </span>
+        <p>{{ description }}</p>
+        <div>
+            <h5>LOCATIONS COVERED</h5>
+            <ul>
+                <li>
+                    <font-awesome-icon icon="fa-solid fa-circle-right-arrow"/>
+                    {{ locations }}
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 </template>
 
