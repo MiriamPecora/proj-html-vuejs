@@ -5,7 +5,10 @@
     import { faPhone, faHouse, faTurnUp, faCircleArrowRight} from '@fortawesome/free-solid-svg-icons';
     import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-    library.add(faPhone, faHouse, faEnvelope, faTurnUp, faCircleArrowRight)
+    import { faFacebookF, faXTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+    library.add( faFacebookF, faXTwitter, faYoutube, faInstagram )
+    library.add( faPhone, faHouse, faEnvelope, faTurnUp, faCircleArrowRight )
 
     export default {
         name: 'Footer'
@@ -100,10 +103,10 @@
                 <div class="col-sm-6 col-md-4 d-flex justify-content-end align-items-center">
                     <div class="content">
                         <ul class="d-flex flex-row gap-3 mb-0">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
+                            <li><font-awesome-icon icon="fa-brands fa-facebook-f"/></li>
+                            <li><font-awesome-icon icon="fa-brands fa-x-twitter"/></li>
+                            <li><font-awesome-icon icon="fa-brands fa-youtube"/></li>
+                            <li><font-awesome-icon icon="fa-brands fa-instagram"/></li>
                         </ul>
                     </div>
                 </div>
