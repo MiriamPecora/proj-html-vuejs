@@ -1,5 +1,12 @@
 <script>
     
+    import { library } from '@fortawesome/fontawesome-svg-core';
+
+    import { faPhone, faHouse, faTurnUp, faCircleArrowRight} from '@fortawesome/free-solid-svg-icons';
+    import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
+    library.add(faPhone, faHouse, faEnvelope, faTurnUp, faCircleArrowRight)
+
     export default {
         name: 'Footer'
     }
@@ -36,16 +43,16 @@
                             <h4 class="pb-4">Driving Courses</h4>
                             <ul class="d-flex flex-column gap-3">
                                 <li>
-                                    <a href="/">Basic Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Basic Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/">Pass Plus Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Pass Plus Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/">Intensive Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Intensive Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/">Instructors Training</a>
+                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Instructors Training</a>
                                 </li>
                             </ul>
                         </div>
@@ -55,17 +62,17 @@
                             <h4 class="pb-4">Contact Details</h4>
                             <ul class="d-flex flex-column gap-3">
                                 <li>
-                                    <span>50 North Main Street <br>
+                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-house" />50 North Main Street <br>
                                     New York, NY 98765</span>
                                 </li>
                                 <li>
-                                    <span>Toll Free: 1-800-555-555</span>
+                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-phone" />Toll Free: 1-800-555-555</span>
                                 </li>
                                 <li>
-                                    <span>info@your-domain.com</span>
+                                    <span><font-awesome-icon class="me-2" icon="fa-regular fa-envelope" />info@your-domain.com</span>
                                 </li>
                                 <li>
-                                    <span>Mon to Sat: 8 am – 5 pm</span>
+                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-turn-up" />Mon to Sat: 8 am – 5 pm</span>
                                 </li>
                             </ul>
                         </div>
@@ -86,7 +93,7 @@
                 <div class="row w-100">
                     <div class="col-sm-6 col-md-8 d-flex align-items-center">
                         <div class="content text-nowrap">
-                            <p>© Copyright 2012 - 2024 | Avada Theme by <span class="highlight">ThemeFusion</span> | All Rights Reserved | Powered by <span class="highlight">WordPress</span></p>
+                            <p class="size_sm">© Copyright 2012 - 2024 | Avada Theme by <span class="highlight">ThemeFusion</span> | All Rights Reserved | Powered by <span class="highlight">WordPress</span></p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +119,7 @@
 
     a {
         text-decoration: none;
-        color: $color-text ;
+        color: $color-text;
     }
 
     #newsletter {
@@ -143,9 +150,14 @@
 
     #bottom_footer {
         background-color: $bg-dark;
+
+        .size_sm {
+            font-size: 12px;
+        }
     }
 
     .highlight {
         color: $color-main;
     }
+    
 </style>
