@@ -1,6 +1,13 @@
 <script>
+import AppPercentage from "../components/AppPercentage.vue";
+import AppTestimonials from "../components/AppTestimonials.vue"
+
 export default {
     name: 'Form',
+    components: {
+        AppTestimonials,
+        AppPercentage,
+    },
     data() {
         return {
             inputNames: [
@@ -45,7 +52,6 @@ export default {
         </div>
 
         <div id="quick_contact">
-
             <div class="container-lg h-100 d-flex flex-column py-5 team-10-card position-relative">
                 <div class="row mx-auto">
 
@@ -87,11 +93,13 @@ export default {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <AppPercentage />
+    <AppTestimonials />
     
 </template>
 
