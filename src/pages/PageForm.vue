@@ -104,23 +104,17 @@ export default {
                 <AppPercentage final-percentage="0" label-text="ACCIDENT RATE" /> 
             </div>
             
-            <div id="testimonialsSection">
+            <div id="testimonialsSection" class="pb-5">
                 <AppTestimonials />
             </div>
         </div>
-        
-        
 
     </div>
 </template>
 
 <style lang="scss" scoped>
 
-@use '../assets/scss/partials/variables' as *;
-
-    #book_now{
-        border: 1px solid black;
-    }
+    @use '../assets/scss/partials/variables' as *;
 
     #jumbotron_booknow {
         background-image: url("../assets/img/booknow/book-now-hero-background.jpg");
