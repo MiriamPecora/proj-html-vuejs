@@ -28,7 +28,6 @@ export default {
     },
     computed: {
         imageUrl() {
-            console.log(this.pathFolder + this.imagePath)
             return new URL(this.pathFolder + this.imagePath + '.jpg', import.meta.url).href;
         }
     }
@@ -37,7 +36,7 @@ export default {
 
 <template>
 <div class="team-10-card" :class="{'card-lg': isFullWidth}">
-    <div class="d-flex">
+    <div>
         <img :src="imageUrl" :alt="this.name">
     </div>
     <div>
@@ -48,11 +47,23 @@ export default {
             <font-awesome-icon icon="fa-brands fa-instagram"/>
         </span>
         <p>{{ description }}</p>
-        <div>
-            <h5>LOCATIONS COVERED</h5>
+        <div :class="{'card-lg': isFullWidth}">
+            <h5 class="fs-6 text-dark">LOCATIONS COVERED</h5>
             <ul>
                 <li>
-                    <font-awesome-icon icon="fa-solid fa-circle-right-arrow"/>
+                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
+                    {{ locations }}
+                </li>
+                <li>
+                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
+                    {{ locations }}
+                </li>
+                <li>
+                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
+                    {{ locations }}
+                </li>
+                <li>
+                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
                     {{ locations }}
                 </li>
             </ul>
