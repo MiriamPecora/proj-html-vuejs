@@ -57,18 +57,18 @@ export default {
 <template>
 
 <div id="testimonial" class="text-center container-lg">
-    <div class="w-50 mx-auto">
+    <div class="width-65 mx-auto">
 
         <!-- title -->
-        <h2 class="text-dark">Testimonials</h2>
+        <h2 class="text-dark fs-1">Testimonials</h2>
     
-        <p>Here’s what our happy drivers had to say about our services:</p>
+        <p class="fs-4 mb-5">Here’s what our happy drivers had to say about our services:</p>
         
-        <img :src="currentImage" alt="portfolio image">
+        <img :src="currentImage" alt="portfolio image" class="mb-4">
         
-        <p>Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.</p>
+        <p class="fst-italic fs-6 spacing-test">Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.</p>
         
-        <h5>{{ currentName }}</h5>
+        <h5 class="lh-lg spacing-test">{{ currentName }}</h5>
         
         <!-- circle dots -->
         <div class="d-flex justify-content-center gap-2">
@@ -90,5 +90,13 @@ img{
 svg{
     cursor: pointer;
     font-size: 12px;
+}
+
+.spacing-test {
+    letter-spacing: 5px;
+}
+
+.width-65 {
+    width: 65%;
 }
 </style>

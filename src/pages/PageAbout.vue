@@ -62,38 +62,38 @@ export default {
             <div class="row d-flex">
                 <div class="col">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0">
                           <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               High Rate of Success
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0 my-3 border-top">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               Zero Accident Rate
                             </button>
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0 border-top">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               We're Never Late
                             </button>
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
@@ -102,38 +102,38 @@ export default {
                 </div>
                 <div class="col">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                               Price Promise
                             </button>
                           </h2>
-                          <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-start mx-2">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0 my-3 border-top">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                               True Professionals
                             </button>
                           </h2>
-                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                          <div id="collapseFive" class="accordion-collapse collapse">
+                            <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item border-2 border-secondary-subtle rounded-0 border-top">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                               We Work Around You
                             </button>
                           </h2>
                           <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
                           </div>
@@ -146,7 +146,9 @@ export default {
     <!-- learning components -->
     <AppStartLearning/>
     <!-- testimonials components -->
-    <AppTestimonials id="#testimonial-section"/>
+    <section id="testimonial-section">
+        <AppTestimonials class="py-5"/>
+    </section>
 </div>
 </template>
 
@@ -173,5 +175,42 @@ export default {
 
 #testimonial-section {
     background-image: url(../assets/img/testimonials/testimonial-background.jpg);
+}
+
+.accordion-button {
+    color: $color-main;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    margin-left: 0;
+    width: 0;
+    height: 0;
+}
+
+.accordion-button::before {
+    margin-left: 10px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    content: "";
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collpased)::before {
+    background-image: url();
 }
 </style>
