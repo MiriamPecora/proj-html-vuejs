@@ -14,12 +14,6 @@ export default {
         AppStartLearning,
         AppCard,
         AppTestimonials
-    },
-    methods: {
-        getImagesPath(image){
-            // prende in input il nome del file
-            return new URL("../assets/img/about/"+image, import.meta.url).href
-        }
     }
 }
 </script>
@@ -28,21 +22,24 @@ export default {
 <div>
     <!-- jumbotron section -->
     <section id="jumbotron-section">
-        <img class="h-60 w-100" :src="getImagesPath('default-ptb-retina.jpg')" alt="jumbotron-background">
-        <h1 class="">About</h1>
+        <div class="container-lg">
+          <h1 class="">About</h1>
+        </div>
     </section>
     <!-- mission section-->
-     <section>
-        <div class="container-lg d-flex pb-5">
-            <div class="col-5">
+     <section id="mission-section">
+        <div class="container-lg pb-5">
+          <div class="d-flex justify-content-between">
+            <div class="w-50">
                 <h1 class="text-dark">Mission Statement</h1>
                 <p class="fs-4 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus.</p>
-                <img src="../assets/img/about/labels.webp" alt="" class="h-25 pt-2">
+                <img src="../assets/img/about/labels.webp" alt="" class="w-100 pt-2">
             </div>
-            <div class="col">
-                <img src="../assets/img/about/about-page-mike-intro-fade.webp" alt="" class="h-100 position-absolute">
+            <div class="w-50 image-container">
+                <img src="../assets/img/about/about-page-mike-intro-fade.webp" alt="" class="w-100 position-relative">
             </div>
+          </div>
         </div>
      </section>
      <!-- card section -->
@@ -157,13 +154,22 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 #jumbotron-section{
+    
+    background-image: url("../assets/img/about/default-ptb-retina.jpg");
+    background-size: cover;
+    padding-top: 250px;
     h1{
         font-size: 70px;
     }
+}
 
-    .container-lg{
-        padding: 0px 0px;
+#mission-section{
+  .image-container{
+
+    img{
+      top: -100px;
     }
+  }
 }
 
 #instructors-section {
