@@ -157,7 +157,7 @@ export default {
             
             <!-- card with arrow down image -->
             <div class="full-arrow-card">
-                <div class="team-10-card text-center">
+                <div class="team-10-card card-border-grey text-center">
                     <div class="row px-5 gx-5">
                         <div class="col-12">
                             <h2 class="py-5 fs-1 team-10-text-dark">Latest News</h2>
