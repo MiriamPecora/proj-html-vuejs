@@ -29,6 +29,9 @@ export default {
             ]
         }
     },
+    beforeMount(){
+        document.title = "Driving - Book Now"
+    }
 }
 
 

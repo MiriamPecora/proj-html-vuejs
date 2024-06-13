@@ -14,6 +14,9 @@ export default {
         AppStartLearning,
         AppCard,
         AppTestimonials
+    },
+    beforeMount(){
+        document.title = "Driving - About"
     }
 }
 </script>

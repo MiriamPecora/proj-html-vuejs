@@ -40,7 +40,11 @@ export default {
             // prende in input il nome del file
             return new URL("../assets/img/home/"+image, import.meta.url).href
 
-        }
+        },
+
+    },
+    beforeMount(){
+        document.title = "Driving - Home"
     }
 
 }

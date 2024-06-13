@@ -1,6 +1,8 @@
 <script>
 export default{
-
+    beforeMount(){
+        document.title = "Driving - Cosa diavolo cerchi?"
+    }
 }
 </script>
 
