@@ -20,7 +20,7 @@ export default {
     <div id="start-learning-component">
         <div class="container-lg d-flex justify-content-between align-items-center">
             <div>
-                <h1>Start Learning to Drive Today</h1>
+                <h2>Start Learning to Drive Today</h2>
                 <p>Give us a call to schedule your first driving lesson</p>
             </div>
             <div>
