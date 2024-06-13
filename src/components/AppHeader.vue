@@ -37,7 +37,7 @@ export default {
               ABOUT
               </router-link>
             </div>
-            <div>PRICES</div>
+            <div class="pointer">PRICES</div>
             <div>
               <button class="btn dropdown-toggle text-uppercase fw-semibold" data-bs-toggle="dropdown" aria-expanded="false">
                 COURSES
@@ -49,8 +49,8 @@ export default {
                 <li><a class="dropdown-item" href="#">Instructor</a></li>
               </ul>
             </div>
-            <div>LOCATIONS</div>
-            <div>BLOG</div>
+            <div class="">LOCATIONS</div>
+            <div class="pointer">BLOG</div>
             <div>
               <button class="btn bg-new rounded-5 px-4 py-2 fw-semibold text-white" type="submit">
                 <router-link :to="{ name: 'Book' }" class="underline-none">
@@ -88,5 +88,9 @@ header{
 
 .underline-none {
   text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
 }
 </style>
