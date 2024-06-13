@@ -71,29 +71,30 @@ export default {
           </div>
         </nav>
     </div> -->
-    <div class="container-lg text-uppercase fw-semibold team-10-text-white">
+    <div class="container-lg fw-semibold team-10-text-white">
       <div class="row align-items-center">
         <div class="col">
           <img class="py-4" src="../assets/img/header/avada-drivers-logo-1x.webp" alt="driving avada logo">
         </div>
-        <div class="col">
+        <div class="col-8">
           <div class="d-flex justify-content-between align-items-center">
-            <div>home</div>
-            <div>about</div>
-            <div>prices</div>
+            <div>HOME</div>
+            <div>ABOUT</div>
+            <div>PRICES</div>
             <div>
-              <button class="btn btn-dark dropdown-toggle text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <button class="btn dropdown-toggle text-uppercase fw-semibold" data-bs-toggle="dropdown" aria-expanded="false">
+                COURSES
+                <span class="rounded-1 p-1 mx-1 btn span-nav bg-new fw-semibold text-white">NEW</span>
               </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Intensive</a></li>
+                <li><a class="dropdown-item" href="#">Pass Plus</a></li>
+                <li><a class="dropdown-item" href="#">Instructor</a></li>
               </ul>
             </div>
-            <div>locations</div>
-            <div>blog</div>
-            <div>book now</div>
+            <div>LOCATIONS</div>
+            <div>BLOG</div>
+            <div><button class="btn bg-new rounded-5 px-4 py-2 fw-semibold text-white" type="submit">BOOK NOW</button></div>
           </div>
         </div>
       </div>
