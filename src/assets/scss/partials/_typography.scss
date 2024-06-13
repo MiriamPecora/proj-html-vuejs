@@ -4,6 +4,14 @@ TYPO
 
 @use './variables' as *;
 
-* {
-  color: $color-text;  
- }
+body *{
+  color: $color-text;
+  
+  &.team-10-text-dark{
+    color: $color-title;
+  }  
+
+  &.team-10-text-main{
+    color: $color-main;
+  }
+}
