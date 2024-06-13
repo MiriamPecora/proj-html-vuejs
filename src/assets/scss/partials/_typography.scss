@@ -9,13 +9,24 @@ body *{
   
   &.team-10-text-dark{
     color: $color-title;
+    *{
+      color: $color-title;
+    }
   }  
 
   &.team-10-text-main{
     color: $color-main;
+    
+    *{
+      color: $color-main;
+    }
   }
 
   &.team-10-text-white{
     color: white;
+
+    *{
+      color: white;
+    }
   }
 }
