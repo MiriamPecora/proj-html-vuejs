@@ -95,8 +95,12 @@ export default {
             <div class="row">
                 <div class="col-5 pe-5">
                     <div class="team-10-card">
-                        <img class="positon-absolute" src="../assets/img/home/new-corner.png" alt="new image">
-                        <h2 class="team-10-text-dark">Courses</h2>
+                        <img class="position-absolute z-0" src="../assets/img/home/new-corner.png" alt="new image">
+                        <div class="position-relative z-1 w-100 h-100 text-center p-5 mt-3">
+                            <h2 class="team-10-text-dark z-1 mb-4">Courses</h2>
+                            <p class="mb-4 p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                            <button class="team-10-button button-green mb-3">Course Infromation  </button>
+                        </div>
                     </div>
                 </div>
                 <div class="courses col-7 d-flex justify-content-between  gap-5 ">
@@ -154,22 +158,30 @@ export default {
             <!-- card with arrow down image -->
             <div class="full-arrow-card">
                 <div class="team-10-card text-center">
-                    <div class="row px-5">
+                    <div class="row px-5 gx-5">
                         <div class="col-12">
                             <h2 class="py-5 fs-1 team-10-text-dark">Latest News</h2>
                         </div>
-                        <div class="col-6">
+                        <div class="col">
                             <div class="image-container">
-                                <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
+                                <img src="../assets/img/home/latest-news-car1.png" alt="img car1">
                             </div>
-                            <h3 class="team-10-text-main">What a car</h3>
-                            <p>Categories: General 0 Commentson What Car to Start With? Views: 7658</p>
+                            <h3 class="team-10-text-main">What Car to Start With?</h3>
+                            <div class="data">
+                                <p>Categories: <span>General</span></p> 
+                                <p><span>0 Comments</span></p>  
+                                <p>Views: 7658</p>
+                            </div>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
-                        <div class="col-6">
-                            <img src="../assets/img/home/latest-news-car2.png" alt="img strana">
-                            <h3 class="team-10-text-main">Avada driving</h3>
-                            <p>testo in piccolo</p>
+                        <div class="col">
+                            <img src="../assets/img/home/latest-news-car2.png" alt="img car2">
+                            <h3 class="team-10-text-main">Avada Driving School Expanding</h3>
+                            <div class="data">
+                                <p>Categories: <span>General</span></p> 
+                                <p><span>0 Comments</span></p>  
+                                <p>Views: 6158</p>
+                            </div>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="col-12">
@@ -244,12 +256,18 @@ export default {
             position: relative;
             top: -30px;
             width: 100%;
-            height: 400px;
+            overflow: hidden;
+
+            img{
+                height: 80px;
+            }
         }
         
         .courses{
-            padding-top: 78px;
+            padding-top: 55px;
         }
+
+        
 
 
     }
@@ -260,6 +278,7 @@ export default {
         padding-bottom: 130px;
     }
 
+
     #instructors-section{
         .container-lg{
             position: relative;
@@ -269,6 +288,14 @@ export default {
 
     #latest-news-section{
         background-image: url("../assets/img/home/latest-news-background.png");
+        background-size: cover;
+        padding-bottom: 50px;
+
+
+        h3{
+            cursor: pointer;
+        }
+        
 
         .full-arrow-card{
             position: relative;
@@ -288,11 +315,35 @@ export default {
                 mask-size: cover;
                 transition: all 0.4s;
 
+                margin-bottom: 15px;
 
                 &:hover{
                     perspective: 100px;
                     transform: scale(1.03);
                 }
+            }
+
+            h3{
+                margin-bottom: 15px;
+            }
+            .data{
+                p{
+                    display: inline-block;
+                    margin: 0px 10px;
+                    text-decoration: underline;
+                    text-decoration-color: #DEDEDE;
+
+                    span{
+                        color: $color-main;
+                        cursor: pointer;
+                    }
+                }
+
+                margin-bottom: 15px;
+            }
+
+            button{
+                margin-top: 15px;
             }
         }
 
