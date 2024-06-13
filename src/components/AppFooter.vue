@@ -24,7 +24,7 @@
                 <div class="col-6 d-flex text-center flex-column gap-4">
                     <h3 class="fs-2">Sign up to our Newsletter</h3>
                     <input type="email" class="team-10-input">
-                    <button class="btn rounded-5 px-4 py-2 fw-semibold text-white">SUBSCRIBE</button>
+                    <button class="team-10-button button-green">SUBSCRIBE</button>
                     <span>(We do not share your data with anybody, and only use it for its intended purpose)</span>  
                 </div>
                 
@@ -38,7 +38,7 @@
                         <div class="content">
                             <img class="pb-4" src="../assets/img/header/avada-drivers-logo-1x.webp" alt="">
                             <p class="lh-lg pe-5">Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
-                            <button id="grey_btn" class="btn rounded-5 btn-outline-secondary px-4 py-2 fw-semibold">MORE ABOUT US</button>
+                            <button class="team-10-button button-gray">MORE ABOUT US</button>
                         </div>
                     </div>
                     <div class="col">
@@ -84,7 +84,7 @@
                         <div class="content mt-3">
                             <h4 class="pb-4">Book Free Class</h4>
                             <img class="pb-4 w-100" src="../assets/img/footer/blogpost-ten.jpg" alt="">
-                            <button id="greenbtn" class="btn rounded-5 px-4 py-2 fw-semibold text-white" type="submit">BOOK NOW</button>
+                            <button class="team-10-button button-green" type="submit">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -143,10 +143,6 @@
         h3 {
             color: $color-title;
         }
-
-        button {
-            background-color: $color-main;
-        }
     }
 
     #top_footer {
@@ -160,14 +156,6 @@
         ul {
             padding-left: 0;
         }
-
-        #grey_btn {
-            border: 4px solid;
-        }
-    }
-
-    #greenbtn{
-        background-color: $color-main;
     }
 
     #bottom_footer {
