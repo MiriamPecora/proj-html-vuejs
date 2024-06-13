@@ -52,7 +52,7 @@ export default {
         </div>
 
         <div id="quick_contact" class="py-5">
-            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card card-border position-relative mb-5">
+            <div class="container-lg h-100 d-flex flex-column py-5 team-10-card card-border-grey position-relative mb-5">
                 <div class="row mx-auto">
 
                     <div id="form_left_side" class="col-4">
@@ -141,14 +141,13 @@ export default {
         height: 100%;
     }
 
-    .card-border{
-        border-top: 5px solid $bg-dark-semitransparent;
-        top: -90px
-    }
-
     // TEXT
     .dark_grey {
         color: $color-title;
+    }
+
+    .card-border-grey {
+        top: -90px;
     }
     
 </style>

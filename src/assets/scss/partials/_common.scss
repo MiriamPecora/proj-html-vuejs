@@ -66,3 +66,7 @@ header {
 #percentageCards{
   gap: 10px;
 }
+
+.card-border-grey{
+  border-top: 5px solid $bg-dark-semitransparent;
+}
