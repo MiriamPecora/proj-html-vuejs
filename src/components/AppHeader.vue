@@ -82,11 +82,11 @@ export default {
             <div>ABOUT</div>
             <div>PRICES</div>
             <div>
-              <button class="btn dropdown-toggle text-uppercase fw-semibold" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="dropdown-toggle text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
                 COURSES
                 <span class="rounded-1 p-1 mx-1 btn span-nav bg-new fw-semibold text-white">NEW</span>
               </button>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#">Intensive</a></li>
                 <li><a class="dropdown-item" href="#">Pass Plus</a></li>
                 <li><a class="dropdown-item" href="#">Instructor</a></li>
