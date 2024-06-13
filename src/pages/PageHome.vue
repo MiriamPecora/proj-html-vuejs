@@ -141,28 +141,35 @@ export default {
     <!-- latest news section -->
     <section id="latest-news-section">
         <div class="container-lg">
-            <div class="team-10-card row">
-                <div class="col-12">
-                    <h2>Latest News</h2>
-                </div>
-                <div class="col-6">
-                    <div class="image-container">
-                        <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
+            
+            <!-- card with arrow down image -->
+            <div class="full-arrow-card">
+                <div class="team-10-card text-center">
+                    <div class="row px-5">
+                        <div class="col-12">
+                            <h2 class="py-5 fs-1">Latest News</h2>
+                        </div>
+                        <div class="col-6">
+                            <div class="image-container">
+                                <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
+                            </div>
+                            <h3>What a car</h3>
+                            <p>testo in piccolo</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="../assets/img/home/latest-news-car2.png" alt="img strana">
+                            <h3>Avada driving</h3>
+                            <p>testo in piccolo</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-success">MORE FROM THE BLOG</button>
+                        </div>
                     </div>
-                    <h3>What a car</h3>
-                    <p>testo in piccolo</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+    
                 </div>
-                <div class="col-6">
-                    <img src="../assets/img/home/latest-news-car2.png" alt="img strana">
-                    <h3>Avada driving</h3>
-                    <p>testo in piccolo</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-success">MORE FROM THE BLOG</button>
-                </div>
-
+                <img class="w-100" src="../assets/img/home/triangle-down.png" alt="">
             </div>
         </div>
     </section>
@@ -190,6 +197,7 @@ export default {
             color: $color-title;
         }
         .team-10-card{
+            width: 100%;
             height: 630px;
             position: relative;
             top: -40px;
@@ -199,7 +207,6 @@ export default {
     #courses-section{
         background-image: url("../assets/img/home/courses-background.png");
         background-size: cover;
-        background-position: bottom;
         padding-bottom: 100px;
 
         .team-10-card{
@@ -218,13 +225,43 @@ export default {
 
     #testimonial-section{
         background-image: url("../assets/img/testimonials/testimonial-background.jpg");
+        padding-top: 170px;
+        padding-bottom: 130px;
+    }
+
+    #instructors-section{
+        .container-lg{
+            position: relative;
+            top: 50px;
+        }
     }
 
     #latest-news-section{
         background-image: url("../assets/img/home/latest-news-background.png");
 
+        .full-arrow-card{
+            position: relative;
+            top: -40px;
+        }
         .team-10-card{
-            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        
+            img{
+                width: 100%;
+                
+
+                mask-image: url("../assets/img/home/mask-17.svg");
+                mask-position: center;
+                mask-size: cover;
+                transition: all 0.4s;
+
+
+                &:hover{
+                    perspective: 100px;
+                    transform: scale(1.03);
+                }
+            }
         }
 
         // .image-container:hover{
@@ -234,28 +271,11 @@ export default {
         //     background-size: cover;
         // }
 
-        img{
-            width: 100%;
-            
-
-            mask-image: url("../assets/img/home/mask-17.svg");
-            mask-position: center;
-            mask-size: cover;
-            transition: all 0.4s;
-
-
-            &:hover{
-                perspective: 100px;
-                transform: scale(1.03);
-            }
-        }
 
     }
 
-    #instructors-section{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+    
+
 
 
 </style>
