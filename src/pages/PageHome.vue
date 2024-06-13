@@ -66,18 +66,20 @@ export default {
             <div class="row">
                 <div class="col">
                     <h2 class="team-10-text-dark">Get Behind the Wheel</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                    <p class="big-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh.</p>
                 </div>
                 <div class="col">
                     <div class="team-10-card text-center">
-                        <h2 class="team-10-text-main">First Lesson Free</h2>
+                        <h3 class="team-10-text-main">First Lesson Free</h3>
                         <p>When you make a block booking with us your first lesson is included free.</p>
-                        <input class="team-10-input" type="text">
-                        <input class="team-10-input" type="text">
-                        <input class="team-10-input" type="text">
-                        <input class="team-10-input" type="text">
-                        <button class="team-10-button button-green">REQUEST A CALLBACK</button>
+                        <form action="/">
+                            <input class="team-10-input" type="text" placeholder="Your Name*" required>
+                            <input class="team-10-input" type="text" placeholder="Email*" required>
+                            <input class="team-10-input" type="text" placeholder="Telephone">
+                            <input class="team-10-input" type="text" placeholder="Location">
+                            <button class="team-10-button button-green">REQUEST A CALLBACK</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -93,7 +95,8 @@ export default {
             <div class="row">
                 <div class="col-5 pe-5">
                     <div class="team-10-card">
-                        
+                        <img class="positon-absolute" src="../assets/img/home/new-corner.png" alt="new image">
+                        <h2 class="team-10-text-dark">Courses</h2>
                     </div>
                 </div>
                 <div class="courses col-7 d-flex justify-content-between  gap-5 ">
@@ -160,7 +163,7 @@ export default {
                                 <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
                             </div>
                             <h3 class="team-10-text-main">What a car</h3>
-                            <p>testo in piccolo</p>
+                            <p>Categories: General 0 Commentson What Car to Start With? Views: 7658</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="col-6">
@@ -170,7 +173,7 @@ export default {
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-success">MORE FROM THE BLOG</button>
+                            <button class="team-10-button button-green">MORE FROM THE BLOG</button>
                         </div>
                     </div>
     
@@ -187,6 +190,20 @@ export default {
 <style lang="scss" scoped>
     @use '../assets/scss/partials/variables' as *;
 
+    // FONT SIZING
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 21px;
+    }
+
+
     #jumbotron-section{
         background-image: url("../assets/img/home/homepage-hero-background.jpg");
         background-size: cover;
@@ -198,16 +215,23 @@ export default {
     }
 
     #behind-wheel-section{
+        *{
+            margin-bottom: 30px;
+        }    
+        
         h2{
-            margin-top: 100px;
+            padding-top: 80px;
         }
 
-        
+        p.big-text{
+            font-size: 22px;
+        }
+
         .team-10-card{
             width: 100%;
-            height: 630px;
             position: relative;
             top: -40px;
+            padding: 40px;
         }
     }
 

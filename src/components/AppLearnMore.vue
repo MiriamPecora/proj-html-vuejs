@@ -16,12 +16,27 @@ export default{
 
 <template>
 <div class="learn-more">
-    <img class="w-100" :src="getImagesPath" :alt="`${title} car img`">
-    <h6>{{ title }}</h6>
-    <button class="btn">LEARN MORE</button>
+    <div class="image-container">
+        <img class="w-100 mb-3" :src="getImagesPath" :alt="`${title} car img`">
+    </div>
+    <h6 class="mb-3">{{ title }}</h6>
+    <button class="team-10-button button-gray">LEARN MORE</button>
 </div>
 </template>
 
 <style lang="scss" scoped>
+.learn-more{
+    text-align: center;
+}
 
+
+
+.button-gray{
+    padding: 9px 20px;
+    font-size: 12px;
+}
+
+h6{
+    font-size: 21px;
+}
 </style>
