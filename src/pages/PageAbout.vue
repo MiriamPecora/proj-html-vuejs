@@ -62,7 +62,7 @@ export default {
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               High Rate of Success
                             </button>
                           </h2>
@@ -74,7 +74,7 @@ export default {
                         </div>
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0 my-3 border-top">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               Zero Accident Rate
                             </button>
                           </h2>
@@ -86,7 +86,7 @@ export default {
                         </div>
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0 border-top">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               We're Never Late
                             </button>
                           </h2>
@@ -102,7 +102,7 @@ export default {
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                               Price Promise
                             </button>
                           </h2>
@@ -114,7 +114,7 @@ export default {
                         </div>
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0 my-3 border-top">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                               True Professionals
                             </button>
                           </h2>
@@ -126,7 +126,7 @@ export default {
                         </div>
                         <div class="accordion-item border-2 border-secondary-subtle rounded-0 border-top">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                               We Work Around You
                             </button>
                           </h2>
@@ -224,10 +224,14 @@ export default {
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
     content: "+";
+    font-size: 20px;
+    font-weight: bold;
     transition: var(--bs-accordion-btn-icon-transition);
 }
 
 .accordion-button:not(.collapsed)::before {
     content: "-";
+    font-size: 20px;
+    font-weight: bold;
 }
 </style>
