@@ -75,17 +75,17 @@ export default {
                             <div class="row">
                                 <div class="col-6 py-4" v-for="inputName in inputNames">
                                     <label class="form-label">{{ inputName }}</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="team-10-input">
                                 </div>
                                 <div class="col-12 py-4">
                                     <label class="form-label" for="service">Service</label>
-                                    <select id="service" class="form-select" aria-label="Default select example">
+                                    <select id="service" class="team-10-input" style="height: 90%;" aria-label="Default select example">
                                         <option v-for="option in options" :value="option"> {{ option }} </option>
                                     </select>
                                 </div>
                                 <div class="col-12 py-4">
                                     <label class="form-label">Message</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="team-10-input"></textarea>
                                 </div>
                                 <div class="col">
                                     <button class="btn rounded-5 px-4 py-2 fw-semibold text-white" type="submit">SEND</button>
@@ -131,10 +131,6 @@ export default {
     }
 
     #form {
-        input, select, textarea {
-            background-color: $bg-about;
-        }
-
         button {
         background-color: $color-main;
         }  
