@@ -58,13 +58,13 @@ export default {
                     <div id="form_left_side" class="col-4">
                         <div>
                             <h3 class="dark_grey fs-2">Give us a call</h3>
-                            <h2 class="py-3 green_txt fs-1">1-800-555-555</h2>
+                            <h2 class="py-3 team-10-text-main fs-1">1-800-555-555</h2>
                             <p class="pb-4 fs-5 fw-semibold ">MONDAY-SATURDAY (8AM-8PM)</p>
                         </div>
                         <hr>
                         <div>
                             <h3 class="pt-4 dark_grey fs-2">Send us an email</h3>
-                            <h3 class="py-3 green_txt fs-2">info@your-domain.com</h3>
+                            <h3 class="py-3 team-10-text-main fs-2">info@your-domain.com</h3>
                             <p class="fs-6 fw-semibold">24/7/365</p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default {
                                     <textarea class="team-10-input"></textarea>
                                 </div>
                                 <div class="col">
-                                    <button class="btn rounded-5 px-4 py-2 fw-semibold text-white" type="submit">SEND</button>
+                                    <button class="team-10-button button-green" type="submit">SEND</button>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +130,6 @@ export default {
         height: 100%;
     }
 
-    #form {
-        button {
-        background-color: $color-main;
-        }  
-    }
-
     #percentageCards {
         top: -90px;
     }
@@ -155,10 +149,6 @@ export default {
     // TEXT
     .dark_grey {
         color: $color-title;
-    }
-
-    .green_txt {
-        color: $color-main;
     }
     
 </style>
