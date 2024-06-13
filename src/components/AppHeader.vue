@@ -20,7 +20,7 @@ export default {
             </p>
         </div>
     </div>
-    <div class="container-lg fw-semibold team-10-text-white">
+    <div class="container-lg fw-semibold team-10-text-white py-2">
       <div class="row align-items-center">
         <div class="col">
           <img class="py-4" src="../assets/img/header/avada-drivers-logo-1x.webp" alt="driving avada logo">
@@ -52,11 +52,9 @@ export default {
             <div class="">LOCATIONS</div>
             <div class="pointer">BLOG</div>
             <div>
-              <button class="btn bg-new rounded-5 px-4 py-2 fw-semibold text-white" type="submit">
-                <router-link :to="{ name: 'Book' }" class="underline-none">
-                  BOOK NOW
-                </router-link>
-              </button>
+              <router-link :to="{ name: 'Book' }" class="underline-none d-block text-center btn bg-new rounded-5 px-4 py-2 fw-semibold text-white">
+                BOOK NOW
+              </router-link>
             </div>
           </div>
         </div>
