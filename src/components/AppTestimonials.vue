@@ -41,7 +41,6 @@ export default {
     computed:{
         currentImage(){
             const imageName = this.store.testimonials[this.currentActive].picture
-            console.log(imageName)
             return new URL('../assets/img/testimonials/'+imageName, import.meta.url).href
         },
         currentName(){
