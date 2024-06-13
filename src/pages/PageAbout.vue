@@ -23,15 +23,15 @@ export default {
     <!-- jumbotron section -->
     <section id="jumbotron-section">
         <div class="container-lg">
-          <h1 class="">About</h1>
+          <h1 class="team-10-text-white">About</h1>
         </div>
     </section>
     <!-- mission section-->
-     <section id="mission-section">
+     <section id="mission-section" class="">
         <div class="container-lg pb-5">
           <div class="d-flex justify-content-between">
             <div class="w-50">
-                <h1 class="text-dark">Mission Statement</h1>
+                <h2 class="team-10-text-dark">Mission Statement</h2>
                 <p class="fs-4 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus.</p>
                 <img src="../assets/img/about/labels.webp" alt="" class="w-100 pt-2">
@@ -45,17 +45,17 @@ export default {
      <!-- card section -->
      <section id="instructors-section">
         <div class="container py-5">
-            <h1 class="text-dark text-center pt-4">Our Team</h1>
+            <h2 class="team-10-text-dark text-center pt-4">Our Team</h2>
             <p class="col-8 text-center fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <!-- AppCard component  -->
             <AppCard  v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
-            :description="instructor.description" :locations="instructor.locations" :is-full-width="true" />
+            :description="instructor.description" :locations="instructor.locations" :role="instructor.role" :is-full-width="true" />
         </div>
     </section>
     <!-- promise section -->
     <section id="promise-section">
         <div class="container text-center py-5">
-            <h1 class="text-dark pt-4">Our Promise</h1>
+            <h2 class="team-10-text-dark pt-4">Our Promise</h2>
             <p class="fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <div class="row d-flex">
                 <div class="col">
@@ -152,6 +152,19 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
+
+// FONT SIZING
+  h2{
+      font-size: 40px;
+  }
+
+  h3{
+      font-size: 30px;
+  }
+
+  h4{
+      font-size: 21px;
+  }
 
 #jumbotron-section{
     

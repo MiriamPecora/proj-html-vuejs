@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-<div class="team-10-card" :class="{'card-lg': isFullWidth}">
+<div class="team-10-card position-relative" :class="{'card-lg': isFullWidth}">
     <!-- immagine -->
     <div class="image-container">
         <img :src="imageUrl" :alt="this.name">
@@ -43,8 +43,9 @@ export default {
     
     <!-- testi e descrizioni -->
     <div class="content-container">
-        <h2 class="team-10-text-dark">{{ name }}</h2>
-        <span>
+        <h2 class="team-10-text-dark py-2">{{ name }}</h2>
+        <p v-show="isFullWidth" class="mb-4">{{ role }}</p>
+        <span class="icons">
             <font-awesome-icon icon="fa-brands fa-facebook-f"/>
             <font-awesome-icon icon="fa-brands fa-x-twitter"/>
             <font-awesome-icon icon="fa-brands fa-instagram"/>
@@ -53,10 +54,10 @@ export default {
 
 
         <div v-show="isFullWidth">
-            <h5 class="fs-6 team-10-text-dark">LOCATIONS COVERED</h5>
+            <h5 class="fs-6 team-10-text-dark py-3">LOCATIONS COVERED</h5>
             <ul>
-                <li v-for="(location, id) in locations" :key="`location-${id}`">
-                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
+                <li v-for="(location, id) in locations" :key="`location-${id}`" class="my-1">
+                    <font-awesome-icon class="team-10-text-main" icon="fa-solid fa-circle-arrow-right"/>
                     {{ location }}
                 </li>
             </ul>
@@ -83,6 +84,11 @@ export default {
     }
 
     text-align: center;
+
+    .icons *{
+        margin-right: 20px;
+    }
+
     &.card-lg{
         display: flex !important;
         text-align: left;
@@ -98,6 +104,13 @@ export default {
                 width: 100%;
             }
         }
+
+        .icons{
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
+        
 
         
 
