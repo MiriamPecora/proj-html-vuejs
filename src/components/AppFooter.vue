@@ -38,7 +38,11 @@
                         <div class="content">
                             <img class="pb-4" src="../assets/img/header/avada-drivers-logo-1x.webp" alt="">
                             <p class="lh-lg pe-5">Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
-                            <button class="team-10-button button-gray">MORE ABOUT US</button>
+                            <button class="team-10-button button-gray">
+                                <router-link :to="{ name: 'About' }" class="text-decoration-none">
+                                    MORE ABOUT US
+                                </router-link>
+                            </button>
                         </div>
                     </div>
                     <div class="col">
@@ -84,7 +88,11 @@
                         <div class="content mt-3">
                             <h4 class="pb-4">Book Free Class</h4>
                             <img class="pb-4 w-100" src="../assets/img/footer/blogpost-ten.jpg" alt="">
-                            <button class="team-10-button button-green" type="submit">BOOK NOW</button>
+                            <button class="team-10-button button-green" type="submit">
+                                <router-link :to="{ name: 'Book' }" class="text-white text-decoration-none">
+                                    BOOK NOW
+                                </router-link>
+                            </button>
                         </div>
                     </div>
                 </div>
