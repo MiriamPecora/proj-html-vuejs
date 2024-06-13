@@ -23,7 +23,7 @@
             <div class="container-lg d-flex justify-content-center py-5">
                 <div class="col-6 d-flex text-center flex-column gap-4">
                     <h3 class="fs-2">Sign up to our Newsletter</h3>
-                    <input type="email" class="form-control">
+                    <input type="email" class="team-10-input">
                     <button class="btn rounded-5 px-4 py-2 fw-semibold text-white">SUBSCRIBE</button>
                     <span>(We do not share your data with anybody, and only use it for its intended purpose)</span>  
                 </div>
@@ -37,8 +37,8 @@
                     <div class="col">
                         <div class="content">
                             <img class="pb-4" src="../assets/img/header/avada-drivers-logo-1x.webp" alt="">
-                            <p class="pb-5 lh-lg">Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
-                            <button class="btn rounded-5 btn-outline-secondary px-4 py-2 fw-semibold">MORE ABOUT US</button>
+                            <p class="lh-lg pe-5">Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
+                            <button id="grey_btn" class="btn rounded-5 btn-outline-secondary px-4 py-2 fw-semibold">MORE ABOUT US</button>
                         </div>
                     </div>
                     <div class="col">
@@ -66,7 +66,7 @@
                             <ul class="d-flex flex-column gap-3">
                                 <li>
                                     <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-solid fa-house" />50 North Main Street <br>
-                                    New York, NY 98765</span>
+                                    <span class="ps-4">New York, NY 98765</span></span>
                                 </li>
                                 <li>
                                     <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-solid fa-phone" />Toll Free: 1-800-555-555</span>
@@ -129,10 +129,6 @@
         background-image: url("../assets/img/footer/newsletter_background.jpg");
         background-size:cover;
 
-        input {
-            background-color: $bg-about;
-        }
-
         h3 {
             color: $color-title;
         }
@@ -148,6 +144,14 @@
 
         img {
             width: 250px;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        #grey_btn {
+            border: 4px solid;
         }
     }
 
