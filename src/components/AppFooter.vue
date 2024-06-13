@@ -46,16 +46,16 @@
                             <h4 class="pb-4">Driving Courses</h4>
                             <ul class="d-flex flex-column gap-3">
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Basic Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Basic Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Pass Plus Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Pass Plus Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Intensive Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Intensive Driving Course</a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2" icon="fa-solid fa-circle-arrow-right" />Instructors Training</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Instructors Training</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,17 +65,17 @@
                             <h4 class="pb-4">Contact Details</h4>
                             <ul class="d-flex flex-column gap-3">
                                 <li>
-                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-house" />50 North Main Street <br>
+                                    <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-solid fa-house" />50 North Main Street <br>
                                     New York, NY 98765</span>
                                 </li>
                                 <li>
-                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-phone" />Toll Free: 1-800-555-555</span>
+                                    <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-solid fa-phone" />Toll Free: 1-800-555-555</span>
                                 </li>
                                 <li>
-                                    <span><font-awesome-icon class="me-2" icon="fa-regular fa-envelope" />info@your-domain.com</span>
+                                    <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-regular fa-envelope" />info@your-domain.com</span>
                                 </li>
                                 <li>
-                                    <span><font-awesome-icon class="me-2" icon="fa-solid fa-turn-up" />Mon to Sat: 8 am – 5 pm</span>
+                                    <span><font-awesome-icon class="me-2 team-10-text-white" icon="fa-solid fa-turn-up" />Mon to Sat: 8 am – 5 pm</span>
                                 </li>
                             </ul>
                         </div>
@@ -128,6 +128,10 @@
     #newsletter {
         background-image: url("../assets/img/footer/newsletter_background.jpg");
         background-size:cover;
+
+        input {
+            background-color: $bg-about;
+        }
 
         h3 {
             color: $color-title;
