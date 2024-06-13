@@ -4,9 +4,14 @@ TYPO
 
 @use './variables' as *;
 
+@import "@fontsource/mulish/400.css";
+@import "@fontsource/mulish/700.css";
+
+
 body *{
   color: $color-text;
-  
+  font-family: mulish;
+  font-size: 700;
   &.team-10-text-dark{
     color: $color-title;
     *{

@@ -35,3 +35,23 @@ header {
       outline: 0;
   }
 }
+
+.team-10-button{
+  padding: 13px 29px;
+  border-radius: 25px;
+  font-weight: $font-weight-buttons;
+  font-size: 14px;
+  &.button-green{
+    border: 0;
+    background-color: $color-main;
+    color: white;
+
+    &:hover{
+      background-color: $color-main-dark;
+    }
+  }
+
+  &.button-gray{
+
+  }
+}

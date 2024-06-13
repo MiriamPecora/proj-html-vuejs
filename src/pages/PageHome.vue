@@ -77,7 +77,7 @@ export default {
                         <input class="team-10-input" type="text">
                         <input class="team-10-input" type="text">
                         <input class="team-10-input" type="text">
-                        <button>REQUEST A CALLBACK</button>
+                        <button class="team-10-button button-green">REQUEST A CALLBACK</button>
                     </div>
                 </div>
             </div>
