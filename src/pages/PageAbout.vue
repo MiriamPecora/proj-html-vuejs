@@ -28,7 +28,7 @@ export default {
     </section>
     <!-- mission section-->
      <section id="mission-section" class="">
-        <div class="container-lg pb-5">
+        <div class="container-lg pb-2">
           <div class="d-flex justify-content-between">
             <div class="w-50 me-5">
                 <h2 class="team-10-text-dark pt-5 mt-5">Mission Statement</h2>
