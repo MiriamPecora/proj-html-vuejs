@@ -23,20 +23,20 @@ export default {
     <!-- jumbotron section -->
     <section id="jumbotron-section">
         <div class="container-lg">
-          <h1 class="team-10-text-white">About</h1>
+          <h1 class="team-10-text-white pb-5">About</h1>
         </div>
     </section>
     <!-- mission section-->
      <section id="mission-section" class="">
         <div class="container-lg pb-5">
           <div class="d-flex justify-content-between">
-            <div class="w-50">
-                <h2 class="team-10-text-dark">Mission Statement</h2>
+            <div class="w-50 me-5">
+                <h2 class="team-10-text-dark pt-5 mt-5">Mission Statement</h2>
                 <p class="fs-4 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus.</p>
                 <img src="../assets/img/about/labels.webp" alt="" class="w-100 pt-2">
             </div>
-            <div class="w-50 image-container">
+            <div class="w-50 image-container mx-5">
                 <img src="../assets/img/about/about-page-mike-intro-fade.webp" alt="" class="w-100 position-relative">
             </div>
           </div>
@@ -46,9 +46,9 @@ export default {
      <section id="instructors-section">
         <div class="container py-5">
             <h2 class="team-10-text-dark text-center pt-4">Our Team</h2>
-            <p class="col-8 text-center fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+            <p class="text-center fs-4 py-4 px-5 mx-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <!-- AppCard component  -->
-            <AppCard  v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
+            <AppCard class="my-5" v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
             :description="instructor.description" :locations="instructor.locations" :role="instructor.role" :is-full-width="true" />
         </div>
     </section>
