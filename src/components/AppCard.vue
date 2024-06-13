@@ -50,7 +50,7 @@ export default {
             <font-awesome-icon icon="fa-brands fa-x-twitter"/>
             <font-awesome-icon icon="fa-brands fa-instagram"/>
         </span>
-        <p>{{ description }}</p>
+        <p class="lh-lg">{{ description }}</p>
 
 
         <div v-show="isFullWidth">
@@ -81,6 +81,11 @@ export default {
 
     img{
         width: 100%;
+        transition: transform 0.5s;
+        &:hover{
+            box-shadow: 0px 0px 10px black;
+            transform: scale(1.05);
+        }
     }
 
     text-align: center;
