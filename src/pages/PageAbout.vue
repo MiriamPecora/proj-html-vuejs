@@ -52,7 +52,7 @@ export default {
             <p class="col-8 text-center fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <!-- AppCard component  -->
             <AppCard  v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
-            :description="instructor.description" :locations="instructor.locations[0]" :is-full-width="true" />
+            :description="instructor.description" :locations="instructor.locations" :is-full-width="true" />
         </div>
     </section>
     <!-- promise section -->
