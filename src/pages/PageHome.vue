@@ -122,18 +122,18 @@ export default {
     <section id="instructors-section">
         <!-- ->AppCard component  -->
         <div class="container-lg">
-            <div class="row ">
+            <div class="row gx-3">
                 <div class="col-12">
                     <h1 class="py-4 team-10-text-dark">Your Instructors</h1>
                 </div>
-                <div class="col-7">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                <div class="col-8">
+                    <p class="big-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 </div>
-                <div class="col-5">
-                    <button class="btn">More About Us</button>
+                <div class="col">
+                    <button class="team-10-button button-green w-100">MORE ABOUT US</button>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-4" v-for="(instructor, id) in store.instructors" :key="`instructor-${id}`">
                     <AppCard 
                     :name="instructor.name"
@@ -215,6 +215,9 @@ export default {
         font-size: 21px;
     }
 
+    .big-text{
+        font-size: 22px;
+    }
 
     #jumbotron-section{
         background-image: url("../assets/img/home/homepage-hero-background.jpg");
@@ -235,9 +238,6 @@ export default {
             padding-top: 80px;
         }
 
-        p.big-text{
-            font-size: 22px;
-        }
 
         .team-10-card{
             width: 100%;
