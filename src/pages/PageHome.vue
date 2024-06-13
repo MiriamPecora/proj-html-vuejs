@@ -111,7 +111,7 @@ export default {
         <div class="container-lg">
             <div class="row ">
                 <div class="col-12">
-                    <h1>Your Instructors</h1>
+                    <h1 class="py-4">Your Instructors</h1>
                 </div>
                 <div class="col-7">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
