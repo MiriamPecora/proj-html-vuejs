@@ -2,6 +2,8 @@ import PageAbout from './pages/PageAbout.vue';
 import PageForm from './pages/PageForm.vue';
 import PageHome from './pages/PageHome.vue';
 
+import NotFound from './pages/NotFound.vue';
+
 import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
     {
@@ -19,6 +21,13 @@ const routes = [
         name: 'Book',
         path: '/book-now'
     },
+
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFound
+    },
+
 ];
 const router = createRouter({
     history: createWebHistory(),
