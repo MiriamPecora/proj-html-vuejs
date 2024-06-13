@@ -131,6 +131,10 @@ export default {
     }
 
     #form {
+        input, select, textarea {
+            background-color: $bg-about;
+        }
+
         button {
         background-color: $color-main;
         }  
