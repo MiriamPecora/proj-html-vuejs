@@ -51,8 +51,8 @@ export default {
             <h1 class="text-dark text-center pt-4">Our Team</h1>
             <p class="col-8 text-center fs-4 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
             <!-- AppCard component  -->
-            <AppCard class="d-flex my-5 rounded-3" v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
-            :description="instructor.description" :locations="instructor.locations[0]"/>
+            <AppCard  v-for="(instructor, index) in store.instructors" :image-path="instructor.picture.about" :name="instructor.name"
+            :description="instructor.description" :locations="instructor.locations[0]" :is-full-width="true" />
         </div>
     </section>
     <!-- promise section -->

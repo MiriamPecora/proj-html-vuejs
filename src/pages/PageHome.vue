@@ -65,13 +65,19 @@ export default {
         <div class="container-lg">
             <div class="row">
                 <div class="col">
-                    <h2>Get Behind the Wheel</h2>
+                    <h2 class="team-10-text-dark">Get Behind the Wheel</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh.</p>
                 </div>
                 <div class="col">
-                    <div class="team-10-card">
-                        
+                    <div class="team-10-card text-center">
+                        <h2 class="team-10-text-main">First Lesson Free</h2>
+                        <p>When you make a block booking with us your first lesson is included free.</p>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <button>REQUEST A CALLBACK</button>
                     </div>
                 </div>
             </div>
@@ -111,7 +117,7 @@ export default {
         <div class="container-lg">
             <div class="row ">
                 <div class="col-12">
-                    <h1 class="py-4">Your Instructors</h1>
+                    <h1 class="py-4 team-10-text-dark">Your Instructors</h1>
                 </div>
                 <div class="col-7">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
@@ -121,7 +127,7 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col" v-for="(instructor, id) in store.instructors" :key="`instructor-${id}`">
+                <div class="col-4" v-for="(instructor, id) in store.instructors" :key="`instructor-${id}`">
                     <AppCard 
                     :name="instructor.name"
                     :description="instructor.shortDesc"
@@ -147,19 +153,19 @@ export default {
                 <div class="team-10-card text-center">
                     <div class="row px-5">
                         <div class="col-12">
-                            <h2 class="py-5 fs-1">Latest News</h2>
+                            <h2 class="py-5 fs-1 team-10-text-dark">Latest News</h2>
                         </div>
                         <div class="col-6">
                             <div class="image-container">
                                 <img src="../assets/img/home/latest-news-car1.png" alt="img strana">
                             </div>
-                            <h3>What a car</h3>
+                            <h3 class="team-10-text-main">What a car</h3>
                             <p>testo in piccolo</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="col-6">
                             <img src="../assets/img/home/latest-news-car2.png" alt="img strana">
-                            <h3>Avada driving</h3>
+                            <h3 class="team-10-text-main">Avada driving</h3>
                             <p>testo in piccolo</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
@@ -194,7 +200,6 @@ export default {
     #behind-wheel-section{
         h2{
             margin-top: 100px;
-            color: $color-title;
         }
         .team-10-card{
             width: 100%;
@@ -246,7 +251,8 @@ export default {
         .team-10-card{
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
-        
+            
+
             img{
                 width: 100%;
                 

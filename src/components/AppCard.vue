@@ -36,19 +36,24 @@ export default {
 
 <template>
 <div class="team-10-card" :class="{'card-lg': isFullWidth}">
-    <div>
+    <!-- immagine -->
+    <div class="image-container">
         <img :src="imageUrl" :alt="this.name">
     </div>
-    <div>
-        <h2 class="text-dark">{{ name }}</h2>
+    
+    <!-- testi e descrizioni -->
+    <div class="content-container">
+        <h2 class="team-10-text-dark">{{ name }}</h2>
         <span>
             <font-awesome-icon icon="fa-brands fa-facebook-f"/>
             <font-awesome-icon icon="fa-brands fa-x-twitter"/>
             <font-awesome-icon icon="fa-brands fa-instagram"/>
         </span>
         <p>{{ description }}</p>
-        <div :class="{'card-lg': isFullWidth}">
-            <h5 class="fs-6 text-dark">LOCATIONS COVERED</h5>
+
+
+        <div v-show="isFullWidth">
+            <h5 class="fs-6 team-10-text-dark">LOCATIONS COVERED</h5>
             <ul>
                 <li>
                     <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
@@ -75,7 +80,39 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-img {
-    width: 50%;
+.team-10-card{
+    padding: 40px;
+
+    border-top: 5px solid $color-main;
+
+    img{
+        width: 100%;
+    }
+
+    text-align: center;
+    &.card-lg{
+        display: flex !important;
+        text-align: left;
+        .content-container{
+            width: 70%;
+            padding-left: 40px;
+        }
+
+        .image-container{
+            width: 30%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        
+
+    }
+
 }
+
+
+
+
 </style>
