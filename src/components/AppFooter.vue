@@ -46,16 +46,16 @@
                             <h4 class="pb-4">Driving Courses</h4>
                             <ul class="d-flex flex-column gap-3">
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Basic Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Basic Driving Course</span></a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Pass Plus Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Pass Plus Driving Course</span></a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Intensive Driving Course</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Intensive Driving Course</span></a>
                                 </li>
                                 <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" />Instructors Training</a>
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Instructors Training</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -83,7 +83,7 @@
                     <div class="col">
                         <div class="content mt-3">
                             <h4 class="pb-4">Book Free Class</h4>
-                            <img class="pb-4" src="../assets/img/footer/blogpost-ten.jpg" alt="">
+                            <img class="pb-4 w-100" src="../assets/img/footer/blogpost-ten.jpg" alt="">
                             <button id="greenbtn" class="btn rounded-5 px-4 py-2 fw-semibold text-white" type="submit">BOOK NOW</button>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                 <div class="row w-100">
                     <div class="col-sm-6 col-md-8 d-flex align-items-center">
                         <div class="content text-nowrap">
-                            <p class="size_sm">© Copyright 2012 - 2024 | Avada Theme by <span class="highlight">ThemeFusion</span> | All Rights Reserved | Powered by <span class="highlight">WordPress</span></p>
+                            <p class="size_sm">© Copyright 2012 - 2024 | Avada Theme by <span class="team-10-text-main">ThemeFusion</span> | All Rights Reserved | Powered by <span class="team-10-text-main">WordPress</span></p>
                         </div>
                     </div>
                 </div>
@@ -123,6 +123,17 @@
     a {
         text-decoration: none;
         color: $color-text;
+        font-weight: bold;
+
+        &:hover {
+             .team-10-text-main * {
+             color: white;
+            }
+
+            span {
+            color: $color-main;
+            }
+        }
     }
 
     #newsletter {
@@ -165,10 +176,6 @@
         .size_sm {
             font-size: 12px;
         }
-    }
-
-    .highlight {
-        color: $color-main;
     }
     
 </style>
