@@ -17,15 +17,17 @@ export default {
 </script>
 
 <template>
-    <div id="start-learning-component" class="container d-flex justify-content-between">
-        <div>
-            <h1 class="text-dark">Start Learning to Drive Today</h1>
-            <p class="text-dark">Give us a call to schedule your first driving lesson</p>
-        </div>
-        <div>
-            <p class="text-dark fs-2">
-                <font-awesome-icon class="me-3" icon="fa-solid fa-phone"/> 1-800-555-555
-            </p>
+    <div id="start-learning-component">
+        <div class="container-lg d-flex justify-content-between align-items-center">
+            <div>
+                <h1>Start Learning to Drive Today</h1>
+                <p>Give us a call to schedule your first driving lesson</p>
+            </div>
+            <div>
+                <p class="fs-2">
+                    <font-awesome-icon class="me-3" icon="fa-solid fa-phone"/> 1-800-555-555
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -37,6 +39,10 @@ export default {
     background-position: bottom;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    * {
+        color: white;
+    }
 }
 
 img{
