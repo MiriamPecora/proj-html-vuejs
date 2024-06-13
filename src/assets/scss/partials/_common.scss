@@ -52,6 +52,13 @@ header {
   }
 
   &.button-gray{
+    border: 2.6px solid $color-gray;
+    color: $color-gray;
+    background-color: transparent;
 
+    &:hover{
+      border-color: $color-main;
+      color: $color-main;
+    }
   }
 }

@@ -5,13 +5,14 @@ TYPO
 @use './variables' as *;
 
 @import "@fontsource/mulish/400.css";
+@import "@fontsource/mulish/500.css";
 @import "@fontsource/mulish/700.css";
 
 
 body *{
   color: $color-text;
   font-family: mulish;
-  font-size: 700;
+
   &.team-10-text-dark{
     color: $color-title;
     *{
@@ -34,4 +35,8 @@ body *{
       color: white;
     }
   }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700 !important;
 }
