@@ -55,21 +55,9 @@ export default {
         <div v-show="isFullWidth">
             <h5 class="fs-6 team-10-text-dark">LOCATIONS COVERED</h5>
             <ul>
-                <li>
+                <li v-for="(location, id) in locations" :key="`location-${id}`">
                     <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                    {{ locations }}
-                </li>
-                <li>
-                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                    {{ locations }}
-                </li>
-                <li>
-                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                    {{ locations }}
-                </li>
-                <li>
-                    <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                    {{ locations }}
+                    {{ location }}
                 </li>
             </ul>
         </div>
@@ -81,6 +69,11 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .team-10-card{
+
+    ul{
+        padding: 0;
+    }
+
     padding: 40px;
 
     border-top: 5px solid $color-main;
