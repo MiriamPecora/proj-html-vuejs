@@ -73,10 +73,10 @@ export default {
                     <div class="team-10-card text-center">
                         <h2 class="team-10-text-main">First Lesson Free</h2>
                         <p>When you make a block booking with us your first lesson is included free.</p>
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <input class="team-10-input" type="text">
+                        <input class="team-10-input" type="text">
+                        <input class="team-10-input" type="text">
+                        <input class="team-10-input" type="text">
                         <button>REQUEST A CALLBACK</button>
                     </div>
                 </div>
@@ -201,6 +201,8 @@ export default {
         h2{
             margin-top: 100px;
         }
+
+        
         .team-10-card{
             width: 100%;
             height: 630px;
