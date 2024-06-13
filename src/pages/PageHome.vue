@@ -130,11 +130,9 @@ export default {
                     <p class="big-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 </div>
                 <div class="col">
-                    <button class="team-10-button button-green w-100">
-                        <router-link :to="{ name: 'About' }" class="text-white text-decoration-none">
+                        <router-link :to="{ name: 'About' }" class="team-10-button d-block text-center button-green w-100 text-white text-decoration-none">
                             MORE ABOUT US
                         </router-link>
-                    </button>
                 </div>
             </div>
             <div class="row mt-5">
