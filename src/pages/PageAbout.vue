@@ -69,7 +69,7 @@ export default {
                               High Rate of Success
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div id="collapseOne" class="accordion-collapse collapse show" >
                             <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
@@ -81,7 +81,7 @@ export default {
                               Zero Accident Rate
                             </button>
                           </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseTwo" class="accordion-collapse collapse" >
                             <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
@@ -93,7 +93,7 @@ export default {
                               We're Never Late
                             </button>
                           </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseThree" class="accordion-collapse collapse" >
                             <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
@@ -109,7 +109,7 @@ export default {
                               Price Promise
                             </button>
                           </h2>
-                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseFour" class="accordion-collapse collapse" >
                             <div class="accordion-body text-start mx-2">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
@@ -133,7 +133,7 @@ export default {
                               We Work Around You
                             </button>
                           </h2>
-                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseSix" class="accordion-collapse collapse" >
                             <div class="accordion-body text-start mx-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
                             </div>
@@ -204,14 +204,11 @@ export default {
     flex-shrink: 0;
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
-    content: "";
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: var(--bs-accordion-btn-icon-width);
+    content: "+";
     transition: var(--bs-accordion-btn-icon-transition);
 }
 
-.accordion-button:not(.collpased)::before {
-    background-image: url();
+.accordion-button:not(.collapsed)::before {
+    content: "-";
 }
 </style>
