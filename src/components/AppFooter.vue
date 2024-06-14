@@ -11,7 +11,17 @@
     library.add( faPhone, faHouse, faEnvelope, faTurnUp, faCircleArrowRight )
 
     export default {
-        name: 'Footer'
+        name: 'Footer',
+        data() {
+            return {
+                drivingCourses: [
+                    "Basic Driving Course",
+                    "Pass Plus Driving Course",
+                    "Intensive Driving Course",
+                    "Instructors Training",
+                ]
+            }
+        },
     }
     
 </script>
@@ -47,17 +57,8 @@
                         <div class="content mt-3">
                             <h4 class="pb-4">Driving Courses</h4>
                             <ul class="d-flex flex-column gap-3">
-                                <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Basic Driving Course</span></a>
-                                </li>
-                                <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Pass Plus Driving Course</span></a>
-                                </li>
-                                <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Intensive Driving Course</span></a>
-                                </li>
-                                <li>
-                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>Instructors Training</span></a>
+                                <li v-for="course in drivingCourses">
+                                    <a href="/"><font-awesome-icon class="me-2 team-10-text-main" icon="fa-solid fa-circle-arrow-right" /><span>{{ course }}</span></a>
                                 </li>
                             </ul>
                         </div>
